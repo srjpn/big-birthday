@@ -1,6 +1,3 @@
-/**
- * Created by soorajp on 01/03/16.
- */
 public class Address {
     String city, state, country;
 

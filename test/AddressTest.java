@@ -1,8 +1,6 @@
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
-/**
- * Created by soorajp on 01/03/16.
- */
+
 public class AddressTest {
 
     @Test

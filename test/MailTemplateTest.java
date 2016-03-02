@@ -1,10 +1,12 @@
 import org.junit.Test;
+import person.contact.MailTemplate;
+import person.contact.MailingAddress;
+import person.specifics.Address;
+import person.specifics.Gender;
+import person.specifics.Name;
 
-import static junit.framework.TestCase.assertEquals;
+import static org.junit.Assert.assertEquals;
 
-/**
- * Created by soorajp on 02/03/16.
- */
 public class MailTemplateTest {
 
     @Test

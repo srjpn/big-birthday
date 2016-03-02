@@ -1,12 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="ANALYZE_TEST_SOURCES" value="false" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="657b2e17-171b-4aee-afc7-14c1ba45a8e9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Big-Birthday/Gender.class" afterPath="$PROJECT_DIR$/out/production/Big-Birthday/Gender.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Big-Birthday/MailingAddress.class" afterPath="$PROJECT_DIR$/out/production/Big-Birthday/MailingAddress.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Big-Birthday/Address.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Big-Birthday/Gender.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Big-Birthday/MailTemplate.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Big-Birthday/MailingAddress.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Big-Birthday/Name.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Big-Birthday/Person.class" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Address.java" afterPath="$PROJECT_DIR$/src/person/specifics/Address.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Gender.java" afterPath="$PROJECT_DIR$/src/person/specifics/Gender.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/MailTemplate.java" afterPath="$PROJECT_DIR$/src/person/contact/MailTemplate.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/MailingAddress.java" afterPath="$PROJECT_DIR$/src/person/contact/MailingAddress.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Name.java" afterPath="$PROJECT_DIR$/src/person/specifics/Name.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Person.java" afterPath="$PROJECT_DIR$/src/person/Person.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/Big-Birthday/AddressTest.class" afterPath="$PROJECT_DIR$/out/test/Big-Birthday/AddressTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/Big-Birthday/GenderTest.class" afterPath="$PROJECT_DIR$/out/test/Big-Birthday/GenderTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/Big-Birthday/MailTemplateTest.class" afterPath="$PROJECT_DIR$/out/test/Big-Birthday/MailTemplateTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/Big-Birthday/MailingAddressTest.class" afterPath="$PROJECT_DIR$/out/test/Big-Birthday/MailingAddressTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/Big-Birthday/NameTest.class" afterPath="$PROJECT_DIR$/out/test/Big-Birthday/NameTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/Big-Birthday/PersonTest.class" afterPath="$PROJECT_DIR$/out/test/Big-Birthday/PersonTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MailingAddress.java" afterPath="$PROJECT_DIR$/src/MailingAddress.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Big-Birthday.iml" afterPath="$PROJECT_DIR$/Big-Birthday.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/AddressTest.java" afterPath="$PROJECT_DIR$/test/AddressTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/GenderTest.java" afterPath="$PROJECT_DIR$/test/GenderTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/MailTemplateTest.java" afterPath="$PROJECT_DIR$/test/MailTemplateTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/MailingAddressTest.java" afterPath="$PROJECT_DIR$/test/MailingAddressTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/NameTest.java" afterPath="$PROJECT_DIR$/test/NameTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/PersonTest.java" afterPath="$PROJECT_DIR$/test/PersonTest.java" />
     </list>
     <ignored path="Big-Birthday.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -20,7 +44,7 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Big-Birthday$All_in_Big_Birthday.coverage" NAME="All in Big-Birthday Coverage Results" MODIFIED="1456930278338" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Big-Birthday$All_in_Big_Birthday.coverage" NAME="All in Big-Birthday Coverage Results" MODIFIED="1456931238577" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -31,48 +55,48 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MailTemplate.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/MailTemplate.java">
+      <file leaf-file-name="MailTemplate.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/person/contact/MailTemplate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.45574388">
-              <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="19" column="94" selection-start-line="19" selection-start-column="94" selection-end-line="19" selection-end-column="94" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Name.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/person/specifics/Name.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
               <folding>
-                <element signature="e#92#93#0" expanded="true" />
-                <element signature="e#132#133#0" expanded="true" />
-                <element signature="e#195#196#0" expanded="true" />
-                <element signature="e#256#257#0" expanded="true" />
-                <element signature="e#291#292#0" expanded="true" />
+                <element signature="e#290#291#0" expanded="true" />
                 <element signature="e#322#323#0" expanded="true" />
+                <element signature="e#359#360#0" expanded="true" />
+                <element signature="e#392#393#0" expanded="true" />
+                <element signature="e#429#430#0" expanded="true" />
+                <element signature="e#486#487#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Gender.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Gender.java">
+      <file leaf-file-name="Address.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/person/specifics/Address.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+            <state vertical-scroll-proportion="0.23305085">
+              <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GenderTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/GenderTest.java">
+      <file leaf-file-name="MailingAddress.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/person/contact/MailingAddress.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="34" column="1" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MailTemplateTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/MailTemplateTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+              <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -80,12 +104,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MailingAddress.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MailingAddress.java">
+      <file leaf-file-name="Person.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/person/Person.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-              <folding />
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#463#464#0" expanded="true" />
+                <element signature="e#542#543#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -94,8 +122,34 @@
         <entry file="file://$PROJECT_DIR$/test/MailingAddressTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-              <folding />
+              <caret line="16" column="44" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MailTemplateTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/MailTemplateTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="13" column="36" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PersonTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/PersonTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -121,20 +175,27 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/test/NameTest.java" />
+        <option value="$PROJECT_DIR$/src/MailingAdress.java" />
+        <option value="$PROJECT_DIR$/src/Sample.java" />
+        <option value="$PROJECT_DIR$/src/Gender.java" />
+        <option value="$PROJECT_DIR$/src/Person.java" />
         <option value="$PROJECT_DIR$/src/Name.java" />
         <option value="$PROJECT_DIR$/src/Address.java" />
-        <option value="$PROJECT_DIR$/src/MailingAdress.java" />
-        <option value="$PROJECT_DIR$/test/AddressTest.java" />
-        <option value="$PROJECT_DIR$/src/Person.java" />
-        <option value="$PROJECT_DIR$/test/PersonTest.java" />
-        <option value="$PROJECT_DIR$/test/MailingAddressTest.java" />
-        <option value="$PROJECT_DIR$/src/Sample.java" />
-        <option value="$PROJECT_DIR$/src/MailTemplate.java" />
-        <option value="$PROJECT_DIR$/src/Gender.java" />
-        <option value="$PROJECT_DIR$/test/GenderTest.java" />
-        <option value="$PROJECT_DIR$/test/MailTemplateTest.java" />
+        <option value="$PROJECT_DIR$/src/person/specifics/Gender.java" />
         <option value="$PROJECT_DIR$/src/MailingAddress.java" />
+        <option value="$PROJECT_DIR$/test/PersonTest.java" />
+        <option value="$PROJECT_DIR$/test/NameTest.java" />
+        <option value="$PROJECT_DIR$/test/GenderTest.java" />
+        <option value="$PROJECT_DIR$/test/AddressTest.java" />
+        <option value="$PROJECT_DIR$/src/MailTemplate.java" />
+        <option value="$PROJECT_DIR$/src/person/specifics/MailingAddress.java" />
+        <option value="$PROJECT_DIR$/src/person/specifics/MailTemplate.java" />
+        <option value="$PROJECT_DIR$/src/person/contact/MailingAddress.java" />
+        <option value="$PROJECT_DIR$/src/person/contact/MailTemplate.java" />
+        <option value="$PROJECT_DIR$/test/MailingAddressTest.java" />
+        <option value="$PROJECT_DIR$/test/MailTemplateTest.java" />
+        <option value="$PROJECT_DIR$/src/person/specifics/Name.java" />
+        <option value="$PROJECT_DIR$/src/person/Person.java" />
       </list>
     </option>
   </component>
@@ -213,6 +274,68 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="person" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Big-Birthday" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Big-Birthday" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="person" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="specifics" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Big-Birthday" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Big-Birthday" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="person" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="contact" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Big-Birthday" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Big-Birthday" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -239,6 +362,7 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/person" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -566,15 +690,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_Big-Birthday - 2016.03.02 at 20h 18m 45s.xml">
-      <configuration name="All in Big-Birthday" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_Big-Birthday - 2016.03.02 at 20h 19m 05s.xml">
-      <configuration name="All in Big-Birthday" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_Big-Birthday - 2016.03.02 at 20h 19m 28s.xml">
-      <configuration name="All in Big-Birthday" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="All_in_Big-Birthday - 2016.03.02 at 20h 20m 30s.xml">
       <configuration name="All in Big-Birthday" configurationId="JUnit" />
     </history-entry>
@@ -584,14 +699,23 @@
     <history-entry file="All_in_Big-Birthday - 2016.03.02 at 20h 21m 19s.xml">
       <configuration name="All in Big-Birthday" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GenderTest - 2016.03.02 at 20h 19m 01s.xml">
-      <configuration name="GenderTest" configurationId="JUnit" />
+    <history-entry file="All_in_Big-Birthday - 2016.03.02 at 20h 32m 52s.xml">
+      <configuration name="All in Big-Birthday" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MailTemplateTest_testCreateTemplate_creates_template_for_the_mailing_address_with_all_lower_case - 2016.03.02 at 20h 19m 24s.xml">
-      <configuration name="MailTemplateTest.testCreateTemplate_creates_template_for_the_mailing_address_with_all_lower_case" configurationId="JUnit" />
+    <history-entry file="All_in_Big-Birthday - 2016.03.02 at 20h 34m 00s.xml">
+      <configuration name="All in Big-Birthday" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MailTemplateTest_testGenerate_gives_the_address_in_specified_template - 2016.03.02 at 20h 18m 39s.xml">
-      <configuration name="MailTemplateTest.testGenerate_gives_the_address_in_specified_template" configurationId="JUnit" />
+    <history-entry file="All_in_Big-Birthday - 2016.03.02 at 20h 37m 09s.xml">
+      <configuration name="All in Big-Birthday" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_Big-Birthday - 2016.03.02 at 20h 37m 19s.xml">
+      <configuration name="All in Big-Birthday" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_Big-Birthday - 2016.03.02 at 20h 48m 41s.xml">
+      <configuration name="All in Big-Birthday" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_Big-Birthday - 2016.03.02 at 20h 52m 36s.xml">
+      <configuration name="All in Big-Birthday" configurationId="JUnit" />
     </history-entry>
     <history-entry file="MailingAddressTest_testToString - 2016.03.02 at 20h 20m 26s.xml">
       <configuration name="MailingAddressTest.testToString" configurationId="JUnit" />
@@ -599,7 +723,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1680" height="951" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -607,12 +731,14 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39975992" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32893157" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32893157" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32893157" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24969475" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -621,9 +747,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -646,7 +770,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Gender.java">
+    <entry file="file://$PROJECT_DIR$/src/person/specifics/Gender.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="1" column="32" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
@@ -662,7 +786,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Person.java">
+    <entry file="file://$PROJECT_DIR$/src/person/Person.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -678,61 +802,6 @@
             <element signature="e#10065#10066#0" expanded="false" />
             <element signature="e#10148#10149#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/NameTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/AddressTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/PersonTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.58003765">
-          <caret line="14" column="106" selection-start-line="14" selection-start-column="106" selection-end-line="14" selection-end-column="106" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Address.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Name.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-          <folding>
-            <element signature="e#331#332#0" expanded="true" />
-            <element signature="e#388#389#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Person.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -752,26 +821,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MailingAddress.java">
+    <entry file="file://$PROJECT_DIR$/src/person/specifics/Gender.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
+          <caret line="0" column="25" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
+          <folding>
+            <element signature="e#117#118#0" expanded="true" />
+            <element signature="e#153#154#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/MailingAddressTest.java">
+    <entry file="file://$PROJECT_DIR$/test/NameTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/MailTemplateTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+          <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -781,31 +845,99 @@
     <entry file="file://$PROJECT_DIR$/test/GenderTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="34" column="1" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
+          <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Gender.java">
+    <entry file="file://$PROJECT_DIR$/test/AddressTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="44" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MailTemplate.java">
+    <entry file="file://$PROJECT_DIR$/src/person/contact/MailTemplate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45574388">
-          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="94" selection-start-line="19" selection-start-column="94" selection-end-line="19" selection-end-column="94" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/MailingAddressTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="44" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
           <folding>
-            <element signature="e#92#93#0" expanded="true" />
-            <element signature="e#132#133#0" expanded="true" />
-            <element signature="e#195#196#0" expanded="true" />
-            <element signature="e#256#257#0" expanded="true" />
-            <element signature="e#291#292#0" expanded="true" />
-            <element signature="e#322#323#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/MailTemplateTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="36" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/PersonTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/person/contact/MailingAddress.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/person/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#463#464#0" expanded="true" />
+            <element signature="e#542#543#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/person/specifics/Name.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+          <folding>
+            <element signature="e#290#291#0" expanded="true" />
+            <element signature="e#322#323#0" expanded="true" />
+            <element signature="e#359#360#0" expanded="true" />
+            <element signature="e#392#393#0" expanded="true" />
+            <element signature="e#429#430#0" expanded="true" />
+            <element signature="e#486#487#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/person/specifics/Address.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23305085">
+          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -1,3 +1,5 @@
+package person.specifics;
+
 public class Gender {
     private final String gender;
 

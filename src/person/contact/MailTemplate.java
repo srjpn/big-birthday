@@ -1,5 +1,7 @@
+package person.contact;
+
 public class MailTemplate {
-    String template;
+    private final String template;
 
     private MailTemplate(String template) {
         this.template = template;
@@ -13,9 +15,9 @@ public class MailTemplate {
         return template;
     }
 
-    public String generate(MailingAddress m){
+    public String generate(person.contact.MailingAddress m){
         String[] fields = {"title","first_name","last_name","city","state","country"};
-        String[] fillUps = {m.gender.getInitial(),m.name.firstName,m.name.secondName,m.address.getCity(),
+        String[] fillUps = {m.gender.getInitial(),m.name.getFirstName(),m.name.getSecondName(),m.address.getCity(),
                             m.address.getState(),m.address.getCountry()};
         String resultAddress = template;
         for (int i = 0; i <fields.length ; i++) {

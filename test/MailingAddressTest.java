@@ -1,4 +1,9 @@
 import org.junit.Test;
+import person.contact.MailingAddress;
+import person.specifics.Address;
+import person.specifics.Gender;
+import person.specifics.Name;
+
 import static org.junit.Assert.assertEquals;
 
 public class MailingAddressTest {

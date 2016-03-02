@@ -1,3 +1,8 @@
+package person;
+
+import person.contact.MailingAddress;
+import person.specifics.*;
+
 public class Person {
     private final Name name;
     private final Gender gender;

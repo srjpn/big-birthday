@@ -1,4 +1,6 @@
 import org.junit.Test;
+import person.specifics.Address;
+
 import static org.junit.Assert.assertEquals;
 
 public class AddressTest {

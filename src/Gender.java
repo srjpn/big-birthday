@@ -14,7 +14,7 @@ public class Gender {
 
     public String getInitial(){
         if(gender.equals("MALE"))
-            return "Mr. ";
-        return "Mrs. ";
+            return "Mr";
+        return "Mrs";
     }
 }

@@ -24,12 +24,12 @@ public class GenderTest {
     @Test
     public void testGetInitial_gives_inital_Mr_for_male_gender() throws Exception {
         Gender gender = Gender.defineGenderAs("male");
-        assertEquals("Mr. ",gender.getInitial());
+        assertEquals("Mr",gender.getInitial());
     }
 
     @Test
     public void testGetInitial_gives_inital_Mrs_for_female_gender() throws Exception {
         Gender gender = Gender.defineGenderAs("female");
-        assertEquals("Mrs. ",gender.getInitial());
+        assertEquals("Mrs",gender.getInitial());
     }
 }

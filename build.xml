@@ -1,0 +1,11 @@
+<project name="Big_Birthday">
+	<target name="labels">
+        <java classname="Big_Birthday" classpath="out/production/Big-Birthday/">
+        </java>
+    </target>
+    <target name="editTemplate">
+        <exec executable="subl">
+            <arg value="./data/template"/>
+        </exec>
+    </target>
+</project>

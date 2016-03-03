@@ -1,21 +1,24 @@
+package person.contact;
+
 import org.junit.Test;
-import person.Person;
 import person.specifics.Address;
 import person.specifics.Gender;
 import person.specifics.Name;
 
 import static org.junit.Assert.assertEquals;
 
-public class PersonTest {
+public class MailingAddressTest {
+
 
     @Test
-    public void testGetMailAddress() throws Exception {
+    public void testToString() throws Exception {
         Name name = new Name("Sooraj", "Parameswaran");
         Gender gender = Gender.defineGenderAs("male");
         Address address = new Address("Thrissur", "Kerala", "India");
 
-        Person person = new Person(name, gender, 21, address);
+        MailingAddress mailingAddress = new MailingAddress(name, gender, address);
 
-        assertEquals("Mr. Sooraj Parameswaran\nThrissur Kerala\nIndia", person.getMailAddress().toString());
+        assertEquals("Mr. Sooraj Parameswaran\nThrissur Kerala\nIndia", mailingAddress.toString());
     }
+
 }

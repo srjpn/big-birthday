@@ -16,6 +16,18 @@ public class Person {
         this.address = address;
     }
 
+    public boolean isFromCity(String city){
+        return address.getCity().equals(city);
+    }
+
+    public boolean isFromState(String state){
+        return address.getState().equals(state);
+    }
+
+    public boolean isFromCountry(String country){
+        return address.getCountry().equals(country);
+    }
+
     public MailingAddress getMailAddress(){
         return new MailingAddress(this.name, this.gender, this.address);
     }

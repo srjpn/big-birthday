@@ -1,6 +1,6 @@
+package person.contact;
+
 import org.junit.Test;
-import person.contact.MailTemplate;
-import person.contact.MailingAddress;
 import person.specifics.Address;
 import person.specifics.Gender;
 import person.specifics.Name;
@@ -27,4 +27,5 @@ public class MailTemplateTest {
 
         assertEquals("Mr. Sooraj Parameswaran\nThrissur, Kerala\nIndia",mailTemplate.generate(mailingAddress));
     }
+
 }

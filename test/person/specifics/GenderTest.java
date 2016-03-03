@@ -1,8 +1,8 @@
-import org.junit.Test;
-import person.specifics.Gender;
+package person.specifics;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+import org.junit.Test;
+
+import static org.junit.Assert.*;
 
 public class GenderTest {
 
@@ -33,4 +33,5 @@ public class GenderTest {
         Gender gender = Gender.defineGenderAs("female");
         assertEquals("Mrs",gender.getInitial());
     }
+
 }

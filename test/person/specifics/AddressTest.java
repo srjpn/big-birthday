@@ -1,10 +1,12 @@
+package person.specifics;
+
 import org.junit.Test;
-import person.specifics.Address;
 
 import static org.junit.Assert.assertEquals;
 
-public class AddressTest {
 
+public class AddressTest {
+    
     @Test
     public void testGetCity() throws Exception {
         Address address = new Address("Thrissur", "Kerala", "India");
@@ -28,4 +30,5 @@ public class AddressTest {
         Address address = new Address("Thrissur", "Kerala", "India");
         assertEquals("Thrissur Kerala\nIndia", address.toString());
     }
+
 }

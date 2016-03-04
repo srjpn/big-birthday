@@ -6,7 +6,7 @@ import person.specifics.Name;
 import java.util.ArrayList;
 
 public class PersonCreator {
-    String data;
+    private final String data;
 
     public PersonCreator(String data) {
         this.data = data;
@@ -14,7 +14,7 @@ public class PersonCreator {
 
     public ArrayList<Person> createPersonFromCSV() throws Exception {
         String[] csvData = data.split("\n");
-        ArrayList<Person> persons = new ArrayList<Person>(10);
+        ArrayList<Person> persons = new ArrayList<>(10);
 
         for (String personData : csvData) {
             String[] personDetails = personData.split(",");

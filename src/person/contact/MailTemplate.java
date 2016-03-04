@@ -16,7 +16,7 @@ public class MailTemplate {
     }
 
     public String generate(person.contact.MailingAddress m){
-        String[] fields = {"title","first_name","last_name","city","state","country"};
+        String[] fields = new String[]{"title", "first_name", "last_name", "city", "state", "country"};
         String[] fillUps = {m.gender.getInitial(),m.name.getFirstName(),m.name.getSecondName(),m.address.getCity(),
                             m.address.getState(),m.address.getCountry()};
         String resultAddress = template;

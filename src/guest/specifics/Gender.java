@@ -1,4 +1,4 @@
-package person.specifics;
+package guest.specifics;
 
 public class Gender {
     private final String gender;

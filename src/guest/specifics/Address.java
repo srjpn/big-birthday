@@ -1,4 +1,4 @@
-package person.specifics;
+package guest.specifics;
 
 public class Address {
     private final String city, state, country;

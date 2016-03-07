@@ -1,4 +1,4 @@
-package person.specifics;
+package guest.specifics;
 
 import org.junit.Test;
 

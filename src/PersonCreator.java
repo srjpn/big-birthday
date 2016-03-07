@@ -1,7 +1,7 @@
-import person.Person;
-import person.specifics.Address;
-import person.specifics.Gender;
-import person.specifics.Name;
+import guest.Guest;
+import guest.specifics.Address;
+import guest.specifics.Gender;
+import guest.specifics.Name;
 
 import java.util.ArrayList;
 
@@ -12,9 +12,9 @@ public class PersonCreator {
         this.data = data;
     }
 
-    public ArrayList<Person> createPersonFromCSV() throws Exception {
+    public ArrayList<Guest> createPersonFromCSV() throws Exception {
         String[] csvData = data.split("\n");
-        ArrayList<Person> persons = new ArrayList<>(10);
+        ArrayList<Guest> guests = new ArrayList<>(10);
 
         for (String personData : csvData) {
             String[] personDetails = personData.split(",");
@@ -22,9 +22,9 @@ public class PersonCreator {
             Gender gender = Gender.defineGenderAs(personDetails[2]);
             Integer age = Integer.parseUnsignedInt(personDetails[3]);
             Address address = new Address(personDetails[4],personDetails[5],personDetails[6]);
-            Person person = new Person(name, gender, age, address);
-            persons.add(person);
+            Guest guest = new Guest(name, gender, age, address);
+            guests.add(guest);
         }
-        return persons;
+        return guests;
     }
 }

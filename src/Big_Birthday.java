@@ -1,5 +1,5 @@
-import person.Person;
-import person.contact.MailTemplate;
+import guest.Guest;
+import guest.contact.MailTemplate;
 
 import java.util.ArrayList;
 
@@ -20,8 +20,8 @@ public class Big_Birthday {
         MailTemplate mailTemplate = MailTemplate.createTemplate(template);
 
         for (Object person1 : persons) {
-            Person person = (Person) person1;
-            System.out.println(mailTemplate.generate(person.getMailAddress()));
+            Guest guest = (Guest) person1;
+            System.out.println(mailTemplate.generate(guest.getMailAddress()));
         }
 
     }

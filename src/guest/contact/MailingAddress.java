@@ -1,8 +1,8 @@
-package person.contact;
+package guest.contact;
 
-import person.specifics.Address;
-import person.specifics.Gender;
-import person.specifics.Name;
+import guest.specifics.Address;
+import guest.specifics.Gender;
+import guest.specifics.Name;
 
 public class MailingAddress {
     final Name name;

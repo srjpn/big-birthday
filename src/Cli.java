@@ -22,26 +22,25 @@ public class Cli {
     }
 
     public String getOptions() throws ParseException{
-        this.parse();
+        if(null == parsedObj) this.parse();
         String result = "";
         Option[] options = parsedObj.getOptions();
-        for (Option option : options) {
-            result = result.concat(option.getOpt());
-        }
+        for (Option option : options) result = result.concat(option.getOpt());
         return  result;
     }
 
-    public String getOptionValue(String option){
+    public String getOptionValue(String option) throws ParseException {
+        if(null == parsedObj) this.parse();
         return parsedObj.getOptionValue(option);
     }
 
     public String[] getFiles() throws ParseException{
-        this.parse();
+        if(null == parsedObj) this.parse();
         return this.parsedObj.getArgs();
     }
 
     public boolean hasOption(String a) throws ParseException{
-        this.parse();
+        if(null == parsedObj) this.parse();
         return this.parsedObj.hasOption(a);
     }
 

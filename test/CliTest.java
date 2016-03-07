@@ -15,12 +15,18 @@ public class CliTest {
         assertTrue(sample.hasOption("c"));
     }
 
-
     @Test
     public void cli_says_no_for_asked_command_is_not_present() throws ParseException{
         String[] sampleArg = {"-c","sample.txt"};
         Cli sample = new Cli(sampleArg);
         assertFalse(sample.hasOption("w"));
+    }
+
+    @Test
+    public void cli_gives_the_value_argument_given_for_the_command() throws ParseException{
+        String[] sampleArg = {"-c","Malapuram","sample.txt"};
+        Cli sample = new Cli(sampleArg);
+        assertEquals("Malapuram",sample.getOptionValue("c"));
     }
 
     @Test

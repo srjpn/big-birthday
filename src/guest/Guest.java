@@ -1,6 +1,5 @@
 package guest;
 
-import guest.contact.MailingAddress;
 import guest.specifics.*;
 
 public class Guest {
@@ -28,32 +27,32 @@ public class Guest {
         return address.getCountry().equals(country);
     }
 
-    public MailingAddress getMailAddress(){
-        return new MailingAddress(this.name, this.gender, this.address);
-    }
-
-    public String getInitial() {
+    protected String getInitial() {
         return gender.getInitial();
     }
 
-    public String getFirstName() {
+    protected String getFirstName() {
         return name.getFirstName();
     }
 
-    public String getSecondName() {
+    protected String getSecondName() {
         return name.getSecondName();
     }
 
-    public String getCity() {
+    protected String getCity() {
         return address.getCity();
     }
 
-    public String getState() {
+    protected String getState() {
         return address.getState();
     }
 
-    public String getCountry() {
+    protected String getCountry() {
         return address.getCountry();
+    }
+
+    public boolean isOlderThan(int threshold){
+        return this.age >= threshold;
     }
 }
 

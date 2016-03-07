@@ -5,19 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="657b2e17-171b-4aee-afc7-14c1ba45a8e9" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Big-Birthday/PersonCreator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/Big-Birthday/guest/contact/MailingAddressTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PersonCreator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/guest/contact/MailingAddressTest.java" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Big-Birthday/guest/contact/MailTemplate.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Big-Birthday/guest/contact/MailingAddress.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/Big-Birthday/guest/contact/MailTemplateTest.class" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/guest/contact/MailTemplate.java" afterPath="$PROJECT_DIR$/src/guest/MailTemplate.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/guest/contact/MailTemplateTest.java" afterPath="$PROJECT_DIR$/test/guest/MailTemplateTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Big-Birthday/Big_Birthday.class" afterPath="$PROJECT_DIR$/out/production/Big-Birthday/Big_Birthday.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Big-Birthday/guest/Guest.class" afterPath="$PROJECT_DIR$/out/production/Big-Birthday/guest/Guest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Big-Birthday/guest/contact/MailTemplate.class" afterPath="$PROJECT_DIR$/out/production/Big-Birthday/guest/contact/MailTemplate.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/Big-Birthday/guest/contact/MailTemplateTest.class" afterPath="$PROJECT_DIR$/out/test/Big-Birthday/guest/contact/MailTemplateTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/Big-Birthday/guest/GuestTest.class" afterPath="$PROJECT_DIR$/out/test/Big-Birthday/guest/GuestTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Big_Birthday.java" afterPath="$PROJECT_DIR$/src/Big_Birthday.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Cli.java" afterPath="$PROJECT_DIR$/src/Cli.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/guest/Guest.java" afterPath="$PROJECT_DIR$/src/guest/Guest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/guest/contact/MailTemplate.java" afterPath="$PROJECT_DIR$/src/guest/contact/MailTemplate.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/guest/contact/MailTemplateTest.java" afterPath="$PROJECT_DIR$/test/guest/contact/MailTemplateTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/guest/GuestTest.java" afterPath="$PROJECT_DIR$/test/guest/GuestTest.java" />
     </list>
     <ignored path="Big-Birthday.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -54,64 +55,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MailTemplateTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/guest/contact/MailTemplateTest.java">
+      <file leaf-file-name="MailTemplate.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/guest/MailTemplate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="31" column="1" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MailingAddress.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/guest/contact/MailingAddress.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.16541353">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MailTemplate.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/guest/contact/MailTemplate.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="27" column="29" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Guest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/guest/Guest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="34" column="10" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="10" />
-              <folding>
-                <element signature="e#881#882#0" expanded="true" />
-                <element signature="e#923#924#0" expanded="true" />
-                <element signature="e#959#960#0" expanded="true" />
-                <element signature="e#1001#1002#0" expanded="true" />
-                <element signature="e#1038#1039#0" expanded="true" />
-                <element signature="e#1081#1082#0" expanded="true" />
-                <element signature="e#1112#1113#0" expanded="true" />
-                <element signature="e#1152#1153#0" expanded="true" />
-                <element signature="e#1184#1185#0" expanded="true" />
-                <element signature="e#1225#1226#0" expanded="true" />
-                <element signature="e#1259#1260#0" expanded="true" />
-                <element signature="e#1302#1303#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="template" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/template">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="27" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="27" />
+            <state vertical-scroll-proportion="0.5864662">
+              <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -121,17 +69,7 @@
         <entry file="file://$PROJECT_DIR$/src/Cli.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CliTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/CliTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="49" column="23" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="23" />
+              <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -189,13 +127,17 @@
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/data/template" />
         <option value="$PROJECT_DIR$/src/person/contact/MailTemplate.java" />
-        <option value="$PROJECT_DIR$/src/Cli.java" />
         <option value="$PROJECT_DIR$/test/CliTest.java" />
         <option value="$PROJECT_DIR$/src/PersonCreator.java" />
         <option value="$PROJECT_DIR$/src/guest/contact/MailTemplate.java" />
-        <option value="$PROJECT_DIR$/src/guest/Guest.java" />
         <option value="$PROJECT_DIR$/src/Big_Birthday.java" />
         <option value="$PROJECT_DIR$/test/guest/contact/MailTemplateTest.java" />
+        <option value="$PROJECT_DIR$/src/guest/contact/MailingAddress.java" />
+        <option value="$PROJECT_DIR$/src/guest/MailTemplate.java" />
+        <option value="$PROJECT_DIR$/test/guest/MailTemplateTest.java" />
+        <option value="$PROJECT_DIR$/src/guest/Guest.java" />
+        <option value="$PROJECT_DIR$/test/guest/GuestTest.java" />
+        <option value="$PROJECT_DIR$/src/Cli.java" />
       </list>
     </option>
   </component>
@@ -320,28 +262,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="guest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="contact" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Big-Birthday" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Big-Birthday" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -361,28 +281,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="guest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Big-Birthday" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Big-Birthday" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="guest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="contact" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -426,6 +324,8 @@
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/test/guest" />
+      <recent name="$PROJECT_DIR$/src/guest" />
       <recent name="$PROJECT_DIR$/lib" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -481,27 +381,6 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="CliTest.it_gives_a_string_of_all_sample" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="Big-Birthday" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CliTest" />
-      <option name="METHOD_NAME" value="it_gives_a_string_of_all_sample" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
     <configuration default="false" name="MailingAddressTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -542,6 +421,32 @@
       <option name="MAIN_CLASS_NAME" value="guest.contact.MailTemplateTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="GuestTest.testIsOlderThan_returns_true_if_the_person_is_older_than_the_given_age" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="guest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="Big-Birthday" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="guest" />
+      <option name="MAIN_CLASS_NAME" value="guest.GuestTest" />
+      <option name="METHOD_NAME" value="testIsOlderThan_returns_true_if_the_person_is_older_than_the_given_age" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -738,17 +643,17 @@
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.All in Big-Birthday" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.CliTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.CliTest.it_gives_a_string_of_all_sample" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.MailingAddressTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.MailTemplateTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.MailingAddressTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.MailTemplateTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.GuestTest.testIsOlderThan_returns_true_if_the_person_is_older_than_the_given_age" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="JUnit.All in Big-Birthday" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.MailingAddressTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.MailTemplateTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.CliTest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.CliTest.it_gives_a_string_of_all_sample" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.GuestTest.testIsOlderThan_returns_true_if_the_person_is_older_than_the_given_age" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.MailingAddressTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.MailTemplateTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.CliTest" />
       </list>
     </recent_temporary>
   </component>
@@ -775,23 +680,23 @@
     <history-entry file="All_in_Big-Birthday - 2016.03.07 at 15h 04m 52s.xml">
       <configuration name="All in Big-Birthday" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CliTest - 2016.03.07 at 12h 45m 39s.xml">
-      <configuration name="CliTest" configurationId="JUnit" />
+    <history-entry file="All_in_Big-Birthday - 2016.03.07 at 15h 05m 16s.xml">
+      <configuration name="All in Big-Birthday" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_Big-Birthday - 2016.03.07 at 15h 08m 29s.xml">
+      <configuration name="All in Big-Birthday" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_Big-Birthday - 2016.03.07 at 15h 09m 09s.xml">
+      <configuration name="All in Big-Birthday" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_Big-Birthday - 2016.03.07 at 15h 17m 54s.xml">
+      <configuration name="All in Big-Birthday" configurationId="JUnit" />
     </history-entry>
     <history-entry file="CliTest - 2016.03.07 at 12h 46m 17s.xml">
       <configuration name="CliTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CliTest_it_gives_a_string_of_all_sample - 2016.03.07 at 12h 46m 13s.xml">
-      <configuration name="CliTest.it_gives_a_string_of_all_sample" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CliTest_it_prints_formatted_help_text - 2016.03.07 at 12h 44m 12s.xml">
-      <configuration name="CliTest.it_prints_formatted_help_text" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CliTest_it_prints_formatted_help_text - 2016.03.07 at 12h 45m 07s.xml">
-      <configuration name="CliTest.it_prints_formatted_help_text" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CliTest_it_prints_formatted_help_text - 2016.03.07 at 12h 45m 32s.xml">
-      <configuration name="CliTest.it_prints_formatted_help_text" configurationId="JUnit" />
+    <history-entry file="GuestTest_testIsOlderThan_returns_true_if_the_person_is_older_than_the_given_age - 2016.03.07 at 15h 17m 35s.xml">
+      <configuration name="GuestTest.testIsOlderThan_returns_true_if_the_person_is_older_than_the_given_age" configurationId="JUnit" />
     </history-entry>
     <history-entry file="MailingAddressTest - 2016.03.07 at 15h 04m 07s.xml">
       <configuration name="MailingAddressTest" configurationId="JUnit" />
@@ -818,9 +723,9 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32893157" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3277311" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3277311" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24969475" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24969475" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32893157" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -876,13 +781,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/guest/contact/MailTemplate.java">
+    <entry file="file://$PROJECT_DIR$/src/guest/MailTemplate.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#350#351#0" expanded="false" />
-            <element signature="e#381#382#0" expanded="false" />
+            <element signature="e#321#322#0" expanded="false" />
+            <element signature="e#352#353#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -904,14 +809,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/guest/contact/MailingAddress.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/guest/contact/MailTemplateTest.java">
+    <entry file="file://$PROJECT_DIR$/test/guest/MailTemplateTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="25" column="115" selection-start-line="25" selection-start-column="64" selection-end-line="25" selection-end-column="115" />
@@ -947,13 +845,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/guest/contact/MailTemplate.java">
+    <entry file="file://$PROJECT_DIR$/src/guest/MailTemplate.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="19" column="94" selection-start-line="19" selection-start-column="94" selection-end-line="19" selection-end-column="94" />
           <folding>
-            <element signature="e#350#351#0" expanded="false" />
-            <element signature="e#381#382#0" expanded="false" />
+            <element signature="e#321#322#0" expanded="false" />
+            <element signature="e#352#353#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -969,13 +867,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guest/contact/MailingAddress.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -1011,13 +902,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33333334">
           <caret line="234" column="18" selection-start-line="234" selection-start-column="18" selection-end-line="234" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/guest/GuestTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16760829">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1099,18 +983,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/CliTest.java">
+    <entry file="file://$PROJECT_DIR$/test/guest/MailTemplateTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="49" column="23" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="23" />
+          <caret line="30" column="1" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cli.java">
+    <entry file="file://$PROJECT_DIR$/src/guest/Guest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+          <folding>
+            <element signature="e#723#724#0" expanded="true" />
+            <element signature="e#765#766#0" expanded="true" />
+            <element signature="e#804#805#0" expanded="true" />
+            <element signature="e#846#847#0" expanded="true" />
+            <element signature="e#886#887#0" expanded="true" />
+            <element signature="e#929#930#0" expanded="true" />
+            <element signature="e#963#964#0" expanded="true" />
+            <element signature="e#1003#1004#0" expanded="true" />
+            <element signature="e#1038#1039#0" expanded="true" />
+            <element signature="e#1079#1080#0" expanded="true" />
+            <element signature="e#1116#1117#0" expanded="true" />
+            <element signature="e#1159#1160#0" expanded="true" />
+            <element signature="e#1207#1208#0" expanded="true" />
+            <element signature="e#1251#1252#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/guest/GuestTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6685499">
+          <caret line="40" column="41" selection-start-line="40" selection-start-column="41" selection-end-line="40" selection-end-column="41" />
           <folding />
         </state>
       </provider>
@@ -1123,31 +1030,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/guest/Guest.java">
+    <entry file="file://$PROJECT_DIR$/test/CliTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="34" column="10" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="10" />
-          <folding>
-            <element signature="e#881#882#0" expanded="true" />
-            <element signature="e#923#924#0" expanded="true" />
-            <element signature="e#959#960#0" expanded="true" />
-            <element signature="e#1001#1002#0" expanded="true" />
-            <element signature="e#1038#1039#0" expanded="true" />
-            <element signature="e#1081#1082#0" expanded="true" />
-            <element signature="e#1112#1113#0" expanded="true" />
-            <element signature="e#1152#1153#0" expanded="true" />
-            <element signature="e#1184#1185#0" expanded="true" />
-            <element signature="e#1225#1226#0" expanded="true" />
-            <element signature="e#1259#1260#0" expanded="true" />
-            <element signature="e#1302#1303#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="1.740113">
+          <caret line="49" column="23" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/guest/contact/MailTemplate.java">
+    <entry file="file://$PROJECT_DIR$/src/Cli.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="29" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
+          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1162,18 +1056,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/guest/contact/MailTemplateTest.java">
+    <entry file="file://$PROJECT_DIR$/src/guest/MailTemplate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="31" column="1" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guest/contact/MailingAddress.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16541353">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.5864662">
+          <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
           <folding />
         </state>
       </provider>

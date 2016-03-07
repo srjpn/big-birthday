@@ -1,12 +1,11 @@
 package guest;
 
-import org.junit.Before;
-import org.junit.Test;
 import guest.specifics.Address;
 import guest.specifics.Gender;
 import guest.specifics.Name;
+import org.junit.Before;
+import org.junit.Test;
 
-import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 public class GuestTest {
@@ -21,10 +20,6 @@ public class GuestTest {
         guest = new Guest(name, gender, 21, address);
     }
 
-    @Test
-    public void testGetMailAddress() throws Exception {
-        assertEquals("Mr. Sooraj Parameswaran\nThrissur Kerala\nIndia", guest.getMailAddress().toString());
-    }
 
     @Test
     public void testIsFromCity_returns_true_if_person_is_from_same_city() throws Exception {
@@ -39,5 +34,10 @@ public class GuestTest {
     @Test
     public void testIsFromCountry_returns_true_if_person_is_from_same_country() throws Exception {
         assertTrue(guest.isFromCountry("India"));
+    }
+
+    @Test
+    public void testIsOlderThan_returns_true_if_the_person_is_older_than_the_given_age() throws Exception {
+        assertTrue(guest.isOlderThan(15));
     }
 }

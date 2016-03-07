@@ -1,6 +1,4 @@
-package guest.contact;
-
-import guest.Guest;
+package guest;
 
 public class MailTemplate {
     private final String template;

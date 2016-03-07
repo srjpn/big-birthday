@@ -42,7 +42,7 @@ public class Cli {
     }
 
     public void help() {
-        HelpFormatter formater = new HelpFormatter();
-        formater.printHelp("Big_Birthday", options);
+        HelpFormatter formatter = new HelpFormatter();
+        formatter.printHelp("Big_Birthday", options);
     }
 }

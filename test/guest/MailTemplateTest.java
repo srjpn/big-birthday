@@ -1,10 +1,9 @@
-package guest.contact;
+package guest;
 
-import guest.Guest;
-import org.junit.Test;
 import guest.specifics.Address;
 import guest.specifics.Gender;
 import guest.specifics.Name;
+import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 

@@ -46,6 +46,6 @@ public class Cli {
 
     public void help() {
         HelpFormatter formatter = new HelpFormatter();
-        formatter.printHelp("Big_Birthday", options);
+        formatter.printHelp("BigBirthday", options);
     }
 }

@@ -1,4 +1,4 @@
-public class Big_Birthday {
+public class BigBirthday {
     private static final String FILE = "data/records";
     private static final String MAILTEMPLATE = "data/template";
 

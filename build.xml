@@ -1,6 +1,6 @@
-<project name="Big_Birthday">
+<project name="BigBirthday">
 	<target name="labels">
-        <java classname="Big_Birthday" classpath="out/production/Big-Birthday/">
+        <java classname="BigBirthday" classpath="out/production/Big-Birthday/">
         </java>
     </target>
     <target name="editTemplate">

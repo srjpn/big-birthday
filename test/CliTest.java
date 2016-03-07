@@ -63,7 +63,7 @@ public class CliTest {
         String[] sampleArgs = {"-w","-c","Bangladesh"};
         Cli sample = new Cli(sampleArgs);
         sample.help();
-        assertEquals("usage: Big_Birthday\n" +
+        assertEquals("usage: BigBirthday\n" +
                 " -a,--age <arg>       Filter by age\n" +
                 " -c,--country <arg>   Filter by country\n" +
                 " -f,--FirstLast       Shows first name first\n" +

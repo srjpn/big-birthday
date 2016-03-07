@@ -31,5 +31,29 @@ public class Guest {
     public MailingAddress getMailAddress(){
         return new MailingAddress(this.name, this.gender, this.address);
     }
+
+    public String getInitial() {
+        return gender.getInitial();
+    }
+
+    public String getFirstName() {
+        return name.getFirstName();
+    }
+
+    public String getSecondName() {
+        return name.getSecondName();
+    }
+
+    public String getCity() {
+        return address.getCity();
+    }
+
+    public String getState() {
+        return address.getState();
+    }
+
+    public String getCountry() {
+        return address.getCountry();
+    }
 }
 

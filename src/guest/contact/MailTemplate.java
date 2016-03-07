@@ -1,5 +1,7 @@
 package guest.contact;
 
+import guest.Guest;
+
 public class MailTemplate {
     private final String template;
 
@@ -15,10 +17,10 @@ public class MailTemplate {
         return template;
     }
 
-    public String generate(guest.contact.MailingAddress m){
+    public String generate(Guest guest){
         String[] fields = new String[]{"title", "first_name", "last_name", "city", "state", "country"};
-        String[] fillUps = {m.gender.getInitial(),m.name.getFirstName(),m.name.getSecondName(),m.address.getCity(),
-                            m.address.getState(),m.address.getCountry()};
+        String[] fillUps = {guest.getInitial(),guest.getFirstName(),guest.getSecondName(),guest.getCity(),
+                            guest.getState(),guest.getCountry()};
         String resultAddress = template;
         for (int i = 0; i <fields.length ; i++) {
             resultAddress = resultAddress.replaceAll(fields[i],fillUps[i]);

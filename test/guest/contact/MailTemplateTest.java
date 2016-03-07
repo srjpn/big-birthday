@@ -1,5 +1,6 @@
 package guest.contact;
 
+import guest.Guest;
 import org.junit.Test;
 import guest.specifics.Address;
 import guest.specifics.Gender;
@@ -21,11 +22,11 @@ public class MailTemplateTest {
         Gender gender = Gender.defineGenderAs("male");
         Address address = new Address("Thrissur", "Kerala", "India");
 
-        MailingAddress mailingAddress = new MailingAddress(name, gender, address);
+        Guest guest = new Guest(name, gender, 20, address);
 
         MailTemplate mailTemplate = MailTemplate.createTemplate("tiTle. firSt_name last_name\ncity, State\ncouNtry");
 
-        assertEquals("Mr. Sooraj Parameswaran\nThrissur, Kerala\nIndia",mailTemplate.generate(mailingAddress));
+        assertEquals("Mr. Sooraj Parameswaran\nThrissur, Kerala\nIndia",mailTemplate.generate(guest));
     }
 
 }

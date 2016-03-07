@@ -10,7 +10,7 @@ import static org.junit.Assert.*;
 public class CliTest {
     @Test
     public void it_parses_the_commads_and_says_yes_of_no_for_asked_commad_is_present_or_not() throws ParseException{
-        String[] sampleArg = {"-c"};
+        String[] sampleArg = {"-c","Bangladesh"};
         Cli sample = new Cli(sampleArg);
         assertTrue(sample.hasOption("c"));
     }
@@ -25,7 +25,7 @@ public class CliTest {
 
     @Test
     public void it_treats_all_the_non_commads_as_files() throws ParseException{
-        String[] sampleArg = {"-c","sample.txt"};
+        String[] sampleArg = {"-c","Bangladesh","sample.txt"};
         Cli sample = new Cli(sampleArg);
         String[] files = {"sample.txt"};
         assertArrayEquals(files,sample.getFiles());
@@ -45,7 +45,7 @@ public class CliTest {
 
     @Test
     public void it_gives_a_string_of_all_sample() throws ParseException {
-        String[] sampleArgs = {"-f","-c"};
+        String[] sampleArgs = {"-f","-c","Bangladesh"};
         Cli sample = new Cli(sampleArgs);
         assertEquals("fc",sample.getOptions());
     }
@@ -54,14 +54,14 @@ public class CliTest {
     public void it_prints_formatted_help_text() throws ParseException {
         ByteArrayOutputStream outContent = new ByteArrayOutputStream();
         System.setOut(new PrintStream(outContent));
-        String[] sampleArgs = {"-w","-c"};
+        String[] sampleArgs = {"-w","-c","Bangladesh"};
         Cli sample = new Cli(sampleArgs);
         sample.help();
         assertEquals("usage: Big_Birthday\n" +
-                " -a,--age         Filter by age\n" +
-                " -c,--city        Filter by city\n" +
-                " -f,--FirstLast   Shows first name first\n" +
-                " -h,--help        Show help\n" +
-                " -l,--LastFirst   Shows last name first\n",outContent.toString());
+                " -a,--age <arg>       Filter by age\n" +
+                " -c,--country <arg>   Filter by country\n" +
+                " -f,--FirstLast       Shows first name first\n" +
+                " -h,--help            Show help\n" +
+                " -l,--LastFirst       Shows last name first\n",outContent.toString());
     }
 }

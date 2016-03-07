@@ -12,8 +12,8 @@ public class Cli {
         options.addOption("h", "help", false, "Show help");
         options.addOption("f", "FirstLast", false, "Shows first name first");
         options.addOption("l", "LastFirst", false, "Shows last name first");
-        options.addOption("c", "city", false, "Filter by city");
-        options.addOption("a", "age", false, "Filter by age");
+        options.addOption("c", "country", true, "Filter by country");
+        options.addOption("a", "age", true, "Filter by age");
     }
 
     private void parse() throws ParseException {
@@ -29,6 +29,10 @@ public class Cli {
             result = result.concat(option.getOpt());
         }
         return  result;
+    }
+
+    public String getOptionValue(String option){
+        return parsedObj.getOptionValue(option);
     }
 
     public String[] getFiles() throws ParseException{

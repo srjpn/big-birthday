@@ -10,10 +10,10 @@ public class Cli {
         this.args = args;
 
         options.addOption("h", "help", false, "Show help");
-        options.addOption("c", "char", false, "Show Character count");
-        options.addOption("l", "char", false, "Show Line count");
-        options.addOption("w", "char", false, "Show Word count");
-        options.addOption("a", "char", false, "Show all");
+        options.addOption("f", "FirstLast", false, "Shows first name first");
+        options.addOption("l", "LastFirst", false, "Shows last name first");
+        options.addOption("c", "city", false, "Filter by city");
+        options.addOption("a", "age", false, "Filter by age");
     }
 
     private void parse() throws ParseException {
@@ -43,6 +43,6 @@ public class Cli {
 
     public void help() {
         HelpFormatter formater = new HelpFormatter();
-        formater.printHelp("Wc", options);
+        formater.printHelp("Big_Birthday", options);
     }
 }

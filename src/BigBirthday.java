@@ -42,7 +42,7 @@ public class BigBirthday {
 
     }
 
-    public static People createPersonFromCSV(String data) throws Exception {
+    private static People createPersonFromCSV(String data) throws Exception {
         String[] csvData = data.split("\n");
         People guests = new People();
 
@@ -58,7 +58,7 @@ public class BigBirthday {
         return guests;
     }
 
-    public static void print(MailTemplate template, People people){
+    private static void print(MailTemplate template, People people){
         for (Guest guest : people) {
             System.out.println(template.generate(guest));
         }

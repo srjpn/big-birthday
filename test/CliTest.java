@@ -51,9 +51,9 @@ public class CliTest {
 
     @Test
     public void it_gives_a_string_of_all_sample() throws ParseException {
-        String[] sampleArgs = {"-f","-c","Bangladesh"};
+        String[] sampleArgs = {"-a","18","-c","Bangladesh"};
         Cli sample = new Cli(sampleArgs);
-        assertEquals("fc",sample.getOptions());
+        assertEquals("ac",sample.getOptions());
     }
 
     @Test
@@ -66,8 +66,6 @@ public class CliTest {
         assertEquals("usage: BigBirthday\n" +
                 " -a,--age <arg>       Filter by age\n" +
                 " -c,--country <arg>   Filter by country\n" +
-                " -f,--FirstLast       Shows first name first\n" +
-                " -h,--help            Show help\n" +
-                " -l,--LastFirst       Shows last name first\n",outContent.toString());
+                " -h,--help            Show help\n",outContent.toString());
     }
 }

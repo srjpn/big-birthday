@@ -1,3 +1,9 @@
+import guest.Guest;
+import guest.MailTemplate;
+import guest.specifics.Address;
+import guest.specifics.Gender;
+import guest.specifics.Name;
+
 public class BigBirthday {
     private static final String FILE = "data/records";
     private static final String MAILTEMPLATE = "data/template";
@@ -14,47 +20,47 @@ public class BigBirthday {
             return;
         }
 
-//        People people = createPersonFromCSV(data);
-//
-//        String commands = new Cli(args).getOptions();
-//
-//        MailTemplate mailTemplate = MailTemplate.createTemplate(template);
+        People people = createPersonFromCSV(data);
 
-//        for (int i = 0; i < commands.length(); i++) {
-//            String command = String.valueOf(commands.charAt(i));
-//            switch (command) {
-//                case "c":
-//                    people = people.filterByCountry(arguments.getOptionValue(command));
-//                    break;
-//                case "a":
-//                    people = people.aboveAge(arguments.getOptionValue(command));
-//                    break;
-//            }
-//        }
-//
-//        print(mailTemplate, people);
+        String commands = new Cli(args).getOptions();
+
+        MailTemplate mailTemplate = MailTemplate.createTemplate(template);
+
+        for (int i = 0; i < commands.length(); i++) {
+            String command = String.valueOf(commands.charAt(i));
+            switch (command) {
+                case "c":
+                    people = people.filterByCountry(arguments.getOptionValue(command));
+                    break;
+                case "a":
+                    people = people.aboveAge(arguments.getOptionValue(command));
+                    break;
+            }
+        }
+
+        print(mailTemplate, people);
 
     }
 
-//    public static People createPersonFromCSV(String data) throws Exception {
-//        String[] csvData = data.split("\n");
-//        ArrayList<Guest> guests = new ArrayList<>(10);
-//
-//        for (String personData : csvData) {
-//            String[] personDetails = personData.split(",");
-//            Name name = new Name(personDetails[0],personDetails[1]);
-//            Gender gender = Gender.defineGenderAs(personDetails[2]);
-//            Integer age = Integer.parseUnsignedInt(personDetails[3]);
-//            Address address = new Address(personDetails[4],personDetails[5],personDetails[6]);
-//            Guest guest = new Guest(name, gender, age, address);
-//            guests.add(guest);
-//        }
-//        return new People();
-//    }
-//
-//    public static void print(MailTemplate template, People people){
-//        for (Guest guest : people) {
-//            System.out.println(template.generate(guest));
-//        }
-//    }
+    public static People createPersonFromCSV(String data) throws Exception {
+        String[] csvData = data.split("\n");
+        People guests = new People();
+
+        for (String personData : csvData) {
+            String[] personDetails = personData.split(",");
+            Name name = new Name(personDetails[0],personDetails[1]);
+            Gender gender = Gender.defineGenderAs(personDetails[2]);
+            Integer age = Integer.parseUnsignedInt(personDetails[3]);
+            Address address = new Address(personDetails[4],personDetails[5],personDetails[6]);
+            Guest guest = new Guest(name, gender, age, address);
+            guests.add(guest);
+        }
+        return guests;
+    }
+
+    public static void print(MailTemplate template, People people){
+        for (Guest guest : people) {
+            System.out.println(template.generate(guest));
+        }
+    }
 }

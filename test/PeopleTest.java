@@ -35,26 +35,6 @@ public class PeopleTest {
     }
 
     @Test
-    public void testFilterByCountry() throws Exception {
-        People fromCountry = people.filterByCountry("India");
-        for (Guest person : fromCountry) assertTrue(person.isFromCountry("India"));
-    }
-
-    @Test
-    public void testAboveAge_for_Age_as_int() throws Exception {
-        People aboveAge = people.aboveAge(38);
-        for (Guest person : aboveAge)
-            assertTrue(person.equals(richard));
-    }
-
-    @Test
-    public void testAboveAge_for_Age_as_String() throws Exception {
-        People aboveAge = people.aboveAge("38");
-        for (Guest person : aboveAge)
-            assertTrue(person.equals(richard));
-    }
-
-    @Test
     public void testHashCode_returns_a_unique_number_according_to_content() throws Exception {
         assertEquals(-707999277, people.hashCode());
     }

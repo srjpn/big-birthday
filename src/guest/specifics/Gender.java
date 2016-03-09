@@ -15,9 +15,7 @@ public class Gender {
     }
 
     public String getInitial(){
-        if(gender.equals("MALE"))
-            return "Mr";
-        return "Mrs";
+        return gender.equals("MALE") ? "Mr" : "Mrs";
     }
 
     @Override
@@ -28,7 +26,6 @@ public class Gender {
         Gender gender1 = (Gender) o;
 
         return gender.equals(gender1.gender);
-
     }
 
     @Override

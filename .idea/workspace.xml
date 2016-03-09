@@ -5,13 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="657b2e17-171b-4aee-afc7-14c1ba45a8e9" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/AgeFilter.java" afterPath="$PROJECT_DIR$/src/guest/filters/AgeFilter.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/CountryFilter.java" afterPath="$PROJECT_DIR$/src/guest/filters/CountryFilter.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Filter.java" afterPath="$PROJECT_DIR$/src/guest/filters/Filter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Big-Birthday/guest/specifics/Gender.class" afterPath="$PROJECT_DIR$/out/production/Big-Birthday/guest/specifics/Gender.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BigBirthday.java" afterPath="$PROJECT_DIR$/src/BigBirthday.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/People.java" afterPath="$PROJECT_DIR$/src/People.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/BigBirthdayTest.java" afterPath="$PROJECT_DIR$/test/BigBirthdayTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/guest/filters/CountryFilter.java" afterPath="$PROJECT_DIR$/src/guest/filters/CountryFilter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/guest/filters/Filter.java" afterPath="$PROJECT_DIR$/src/guest/filters/Filter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/guest/specifics/Gender.java" afterPath="$PROJECT_DIR$/src/guest/specifics/Gender.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/PeopleTest.java" afterPath="$PROJECT_DIR$/test/PeopleTest.java" />
     </list>
     <ignored path="Big-Birthday.iws" />
@@ -27,7 +26,7 @@
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/Big-Birthday$PeopleTest.coverage" NAME="PeopleTest Coverage Results" MODIFIED="1457364106523" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/Big-Birthday$All_in_Big_Birthday.coverage" NAME="All in Big-Birthday Coverage Results" MODIFIED="1457522205927" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Big-Birthday$All_in_Big_Birthday.coverage" NAME="All in Big-Birthday Coverage Results" MODIFIED="1457532702221" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -37,66 +36,7 @@
     <favorites_list name="Big-Birthday" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="BigBirthday.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/BigBirthday.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="84" column="22" selection-start-line="84" selection-start-column="22" selection-end-line="84" selection-end-column="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="records" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/records">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="16" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="People.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/People.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="82" column="80" selection-start-line="82" selection-start-column="80" selection-end-line="82" selection-end-column="80" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#706#707#0" expanded="true" />
-                <element signature="e#741#742#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PeopleTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/PeopleTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="58" column="31" selection-start-line="58" selection-start-column="31" selection-end-line="58" selection-end-column="31" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BigBirthdayTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test/BigBirthdayTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.50282484">
-              <caret line="77" column="5" selection-start-line="77" selection-start-column="5" selection-end-line="77" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -141,7 +81,6 @@
         <option value="$PROJECT_DIR$/src/Big_Birthday.java" />
         <option value="$PROJECT_DIR$/test/person/specifics/PeopleTest.java" />
         <option value="$PROJECT_DIR$/build.xml" />
-        <option value="$PROJECT_DIR$/src/guest/MailTemplate.java" />
         <option value="$PROJECT_DIR$/src/ReadFile.java" />
         <option value="$PROJECT_DIR$/test/guest/specifics/GenderTest.java" />
         <option value="$PROJECT_DIR$/data/records" />
@@ -149,11 +88,8 @@
         <option value="$PROJECT_DIR$/test/guest/MailTemplateTest.java" />
         <option value="$PROJECT_DIR$/TODO" />
         <option value="$PROJECT_DIR$/test/guest/specifics/BigBirthdayTest.java" />
-        <option value="$PROJECT_DIR$/src/guest/Guest.java" />
         <option value="$PROJECT_DIR$/src/guest/specifics/Age.java" />
-        <option value="$PROJECT_DIR$/src/guest/specifics/Gender.java" />
         <option value="$PROJECT_DIR$/src/guest/specifics/Name.java" />
-        <option value="$PROJECT_DIR$/src/guest/specifics/Address.java" />
         <option value="$PROJECT_DIR$/test/guest/specifics/AgeTest.java" />
         <option value="$PROJECT_DIR$/test/guest/specifics/AddressTest.java" />
         <option value="$PROJECT_DIR$/test/guest/GuestTest.java" />
@@ -163,12 +99,16 @@
         <option value="$PROJECT_DIR$/src/CountryFilter.java" />
         <option value="$PROJECT_DIR$/src/AgeFilter.java" />
         <option value="$PROJECT_DIR$/src/guest/filters/AgeFilter.java" />
-        <option value="$PROJECT_DIR$/src/guest/filters/CountryFilter.java" />
-        <option value="$PROJECT_DIR$/src/guest/filters/Filter.java" />
         <option value="$PROJECT_DIR$/src/BigBirthday.java" />
+        <option value="$PROJECT_DIR$/test/BigBirthdayTest.java" />
+        <option value="$PROJECT_DIR$/src/guest/specifics/Gender.java" />
+        <option value="$PROJECT_DIR$/src/guest/filters/Filter.java" />
+        <option value="$PROJECT_DIR$/src/guest/filters/CountryFilter.java" />
+        <option value="$PROJECT_DIR$/src/guest/Guest.java" />
+        <option value="$PROJECT_DIR$/src/guest/MailTemplate.java" />
+        <option value="$PROJECT_DIR$/src/guest/specifics/Address.java" />
         <option value="$PROJECT_DIR$/src/People.java" />
         <option value="$PROJECT_DIR$/test/PeopleTest.java" />
-        <option value="$PROJECT_DIR$/test/BigBirthdayTest.java" />
       </list>
     </option>
   </component>
@@ -249,6 +189,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Big-Birthday" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Big-Birthday" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Big-Birthday" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Big-Birthday" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Big-Birthday" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="guest" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -621,15 +593,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_Big-Birthday - 2016.03.09 at 16h 43m 39s.xml">
-      <configuration name="All in Big-Birthday" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_Big-Birthday - 2016.03.09 at 16h 45m 29s.xml">
-      <configuration name="All in Big-Birthday" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_Big-Birthday - 2016.03.09 at 16h 46m 27s.xml">
-      <configuration name="All in Big-Birthday" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="All_in_Big-Birthday - 2016.03.09 at 16h 46m 47s.xml">
       <configuration name="All in Big-Birthday" configurationId="JUnit" />
     </history-entry>
@@ -637,6 +600,18 @@
       <configuration name="All in Big-Birthday" configurationId="JUnit" />
     </history-entry>
     <history-entry file="All_in_Big-Birthday - 2016.03.09 at 17h 02m 39s.xml">
+      <configuration name="All in Big-Birthday" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_Big-Birthday - 2016.03.09 at 17h 04m 02s.xml">
+      <configuration name="All in Big-Birthday" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_Big-Birthday - 2016.03.09 at 17h 07m 11s.xml">
+      <configuration name="All in Big-Birthday" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_Big-Birthday - 2016.03.09 at 19h 40m 37s.xml">
+      <configuration name="All in Big-Birthday" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_Big-Birthday - 2016.03.09 at 19h 41m 43s.xml">
       <configuration name="All in Big-Birthday" configurationId="JUnit" />
     </history-entry>
     <history-entry file="BigBirthdayTest - 2016.03.09 at 17h 03m 57s.xml">
@@ -647,9 +622,6 @@
     </history-entry>
     <history-entry file="BigBirthdayTest_testApplyFilters_applies_filters_and_returns_a_people_object_for_age - 2016.03.09 at 16h 59m 07s.xml">
       <configuration name="BigBirthdayTest.testApplyFilters_applies_filters_and_returns_a_people_object_for_age" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PeopleTest_testAboveAge_for_Age_as_int - 2016.03.09 at 16h 43m 28s.xml">
-      <configuration name="PeopleTest.testAboveAge_for_Age_as_int" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView" selected-index="1">
@@ -663,7 +635,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1680" height="951" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32814372" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -672,9 +644,9 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32893157" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32893157" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32412964" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32893157" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32412964" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24969475" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32893157" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -887,17 +859,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/guest/MailTemplate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
-          <folding>
-            <element signature="e#321#322#0" expanded="false" />
-            <element signature="e#352#353#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.08730159">
@@ -930,17 +891,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/guest/specifics/Gender.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
-          <folding>
-            <element signature="e#924#925#0" expanded="true" />
-            <element signature="e#964#965#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/guest/specifics/Name.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -968,14 +918,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/guest/specifics/Address.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/guest/specifics/AddressTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -986,14 +928,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/guest/Guest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="67" column="16" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/lib/commons-cli-1.2.jar!/org/apache/commons/cli/Option.class">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.35119048">
@@ -1001,16 +935,6 @@
           <folding>
             <element signature="e#4398#4399#0" expanded="true" />
             <element signature="e#4471#4472#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cli.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="84" selection-start-line="27" selection-start-column="84" selection-end-line="27" selection-end-column="84" />
-          <folding>
-            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1062,27 +986,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/guest/filters/CountryFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-          <folding>
-            <element signature="e#154#155#0" expanded="true" />
-            <element signature="e#192#193#0" expanded="true" />
-            <element signature="e#248#249#0" expanded="true" />
-            <element signature="e#299#300#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guest/filters/Filter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/records">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1107,12 +1010,79 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BigBirthday.java">
+    <entry file="file://$PROJECT_DIR$/test/BigBirthdayTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="84" column="22" selection-start-line="84" selection-start-column="22" selection-end-line="84" selection-end-column="22" />
+          <caret line="77" column="5" selection-start-line="77" selection-start-column="5" selection-end-line="77" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guest/filters/Filter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guest/specifics/Address.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#403#404#0" expanded="true" />
+            <element signature="e#433#434#0" expanded="true" />
+            <marker date="1457526148000" expanded="true" signature="254:370" placeholder="//..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cli.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="84" selection-start-line="27" selection-start-column="84" selection-end-line="27" selection-end-column="84" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guest/specifics/Gender.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+          <folding>
+            <element signature="e#563#564#0" expanded="true" />
+            <element signature="e#622#623#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guest/filters/CountryFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+          <folding>
+            <element signature="e#168#169#0" expanded="true" />
+            <element signature="e#206#207#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guest/MailTemplate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guest/Guest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+          <folding>
+            <element signature="e#627#628#0" expanded="true" />
+            <element signature="e#686#687#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1120,11 +1090,9 @@
     <entry file="file://$PROJECT_DIR$/src/People.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="82" column="80" selection-start-line="82" selection-start-column="80" selection-end-line="82" selection-end-column="80" />
+          <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#706#707#0" expanded="true" />
-            <element signature="e#741#742#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1132,18 +1100,20 @@
     <entry file="file://$PROJECT_DIR$/test/PeopleTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="58" column="31" selection-start-line="58" selection-start-column="31" selection-end-line="58" selection-end-column="31" />
+          <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/BigBirthdayTest.java">
+    <entry file="file://$PROJECT_DIR$/src/BigBirthday.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.50282484">
-          <caret line="77" column="5" selection-start-line="77" selection-start-column="5" selection-end-line="77" selection-end-column="5" />
-          <folding />
+        <state vertical-scroll-proportion="0.41996235">
+          <caret line="84" column="22" selection-start-line="84" selection-start-column="22" selection-end-line="84" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

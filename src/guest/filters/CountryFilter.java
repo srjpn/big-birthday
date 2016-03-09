@@ -3,7 +3,7 @@ package guest.filters;
 import guest.Guest;
 
 public class CountryFilter implements Filter {
-    String country;
+    private final String country;
 
     public CountryFilter(String country) {
         this.country = country;

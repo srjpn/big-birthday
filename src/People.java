@@ -45,29 +45,6 @@ public class People implements Iterable<Guest>{
         return peopleFromCountry;
     }
 
-    public People filterByCountry(String country){
-        People peopleFromCountry = new People();
-
-        for (Guest person : people)
-            if (person.isFromCountry(country)) peopleFromCountry.add(person);
-
-        return peopleFromCountry;
-    }
-
-    public People aboveAge(int age){
-        People peopleAboveAge = new People();
-
-        for (Guest person : people)
-            if (person.isOlderThan(age)) peopleAboveAge.add(person);
-
-        return peopleAboveAge;
-    }
-
-    public People aboveAge(String age){
-        int thresholdsAge = Integer.parseInt(age);
-        return aboveAge(thresholdsAge);
-    }
-
     @Override
     public Iterator<Guest> iterator() {
         return people.iterator();

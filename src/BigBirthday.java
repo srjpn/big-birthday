@@ -8,41 +8,51 @@ public class BigBirthday {
     private static final String FILE = "data/records";
     private static final String MAILTEMPLATE = "data/template";
 
-    public static void main(String[] args) throws Exception {
-
-        String data =  ReadFile.addFile(FILE).getContent();
-        String template =  ReadFile.addFile(MAILTEMPLATE).getContent();
-
+    public static void main(String[] args) {
         Cli arguments = new Cli(args);
 
-        if (arguments.hasOption("h")){
-            arguments.help();
-            return;
-        }
+        try{
+            String data =  ReadFile.addFile(FILE).getContent();
+            String template =  ReadFile.addFile(MAILTEMPLATE).getContent();
 
-        People people = createPersonFromCSV(data);
-
-        String commands = new Cli(args).getOptions();
-
-        MailTemplate mailTemplate = MailTemplate.createTemplate(template);
-
-        for (int i = 0; i < commands.length(); i++) {
-            String command = String.valueOf(commands.charAt(i));
-            switch (command) {
-                case "c":
-                    people = people.filterByCountry(arguments.getOptionValue(command));
-                    break;
-                case "a":
-                    people = people.aboveAge(arguments.getOptionValue(command));
-                    break;
+            if (arguments.hasOption("h")){
+                arguments.help();
+                return;
             }
-        }
 
-        print(mailTemplate, people);
+            People people = createPersonFromCSV(data);
+
+            String commands = new Cli(args).getOptions();
+
+            MailTemplate mailTemplate = MailTemplate.createTemplate(template);
+
+            for (int i = 0; i < commands.length(); i++) {
+                String command = String.valueOf(commands.charAt(i));
+                switch (command) {
+                    case "c":
+                        people = people.filterByCountry(arguments.getOptionValue(command));
+                        break;
+                    case "a":
+                        people = people.aboveAge(arguments.getOptionValue(command));
+                        break;
+                }
+            }
+
+            print(mailTemplate, people);
+        }
+        catch (Exception e){
+            System.out.println(e.getMessage());
+            arguments.help();
+            System.exit(1);
+        }
+        catch (Error e){
+            System.out.println(e.getMessage());
+            System.exit(1);
+        }
 
     }
 
-    private static People createPersonFromCSV(String data) throws Exception {
+    private static People createPersonFromCSV(String data) throws Exception, Error {
         String[] csvData = data.split("\n");
         People guests = new People();
 

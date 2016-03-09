@@ -15,17 +15,17 @@ public class ReadFile {
         this.content = "";
     }
 
-    static ReadFile addFile(String file){
+    static ReadFile addFile(String file) throws Exception {
         ReadFile self = new ReadFile(file);
         try{
             self.addInputStream();
             self.read();
         }
         catch(FileNotFoundException err){
-            System.out.println("ERROR.... File Not Found "+file);
+            throw new Exception("ERROR.... File Not Found "+file);
         }
         catch(IOException err){
-            System.out.println("Oops... The File can't be read...");
+            throw new Exception("Oops... The File can't be read...");
         }
         return self;
     }

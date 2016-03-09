@@ -69,7 +69,7 @@ public class BigBirthdayTest {
         HashMap<String,String> filters = new HashMap<>();
         filters.put("a","21");
 
-        People sortedPeople = birthday.applyFilters(filters, people);
+        People sortedPeople = birthday.applyFilters(filters, people).filter();
 
         People expected = new People();
         expected.add(sooraj);
@@ -86,7 +86,7 @@ public class BigBirthdayTest {
         HashMap<String,String> filters = new HashMap<>();
         filters.put("c","India");
 
-        People sortedPeople = birthday.applyFilters(filters, people);
+        People sortedPeople = birthday.applyFilters(filters, people).filter();
 
         People expected = new People();
         expected.add(sooraj);

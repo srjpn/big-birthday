@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="657b2e17-171b-4aee-afc7-14c1ba45a8e9" name="Default" comment="">
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/AgeFilter.java" afterPath="$PROJECT_DIR$/src/guest/filters/AgeFilter.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/CountryFilter.java" afterPath="$PROJECT_DIR$/src/guest/filters/CountryFilter.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Filter.java" afterPath="$PROJECT_DIR$/src/guest/filters/Filter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BigBirthday.java" afterPath="$PROJECT_DIR$/src/BigBirthday.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/People.java" afterPath="$PROJECT_DIR$/src/People.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/BigBirthdayTest.java" afterPath="$PROJECT_DIR$/test/BigBirthdayTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/PeopleTest.java" afterPath="$PROJECT_DIR$/test/PeopleTest.java" />
@@ -23,7 +27,7 @@
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/Big-Birthday$PeopleTest.coverage" NAME="PeopleTest Coverage Results" MODIFIED="1457364106523" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/Big-Birthday$All_in_Big_Birthday.coverage" NAME="All in Big-Birthday Coverage Results" MODIFIED="1457518670062" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Big-Birthday$All_in_Big_Birthday.coverage" NAME="All in Big-Birthday Coverage Results" MODIFIED="1457522205927" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -38,10 +42,20 @@
         <entry file="file://$PROJECT_DIR$/src/BigBirthday.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="43" column="9" selection-start-line="43" selection-start-column="9" selection-end-line="43" selection-end-column="9" />
+              <caret line="84" column="22" selection-start-line="84" selection-start-column="22" selection-end-line="84" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="records" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/records">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="16" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -50,21 +64,21 @@
         <entry file="file://$PROJECT_DIR$/src/People.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="49" column="30" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="30" />
+              <caret line="82" column="80" selection-start-line="82" selection-start-column="80" selection-end-line="82" selection-end-column="80" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#677#678#0" expanded="true" />
-                <element signature="e#712#713#0" expanded="true" />
+                <element signature="e#706#707#0" expanded="true" />
+                <element signature="e#741#742#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PeopleTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PeopleTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/PeopleTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.50282484">
-              <caret line="44" column="5" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="58" column="31" selection-start-line="58" selection-start-column="31" selection-end-line="58" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -72,52 +86,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BigBirthdayTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BigBirthdayTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/BigBirthdayTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="59" column="38" selection-start-line="59" selection-start-column="38" selection-end-line="59" selection-end-column="38" />
+            <state vertical-scroll-proportion="0.50282484">
+              <caret line="77" column="5" selection-start-line="77" selection-start-column="5" selection-end-line="77" selection-end-column="5" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Filter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Filter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CountryFilter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/CountryFilter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
-              <folding>
-                <element signature="e#130#131#0" expanded="true" />
-                <element signature="e#168#169#0" expanded="true" />
-                <element signature="e#224#225#0" expanded="true" />
-                <element signature="e#275#276#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AgeFilter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AgeFilter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-              <folding>
-                <element signature="e#108#109#0" expanded="true" />
-                <element signature="e#138#139#0" expanded="true" />
-                <element signature="e#194#195#0" expanded="true" />
-                <element signature="e#239#240#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -144,9 +118,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/person/specifics/MailingAddress.java" />
-        <option value="$PROJECT_DIR$/src/person/specifics/MailTemplate.java" />
-        <option value="$PROJECT_DIR$/src/person/contact/MailingAddress.java" />
         <option value="$PROJECT_DIR$/test/MailingAddressTest.java" />
         <option value="$PROJECT_DIR$/test/MailTemplateTest.java" />
         <option value="$PROJECT_DIR$/src/person/specifics/Name.java" />
@@ -188,13 +159,16 @@
         <option value="$PROJECT_DIR$/test/guest/GuestTest.java" />
         <option value="$PROJECT_DIR$/src/Cli.java" />
         <option value="$PROJECT_DIR$/test/CliTest.java" />
-        <option value="$PROJECT_DIR$/src/BigBirthday.java" />
         <option value="$PROJECT_DIR$/src/Filter.java" />
         <option value="$PROJECT_DIR$/src/CountryFilter.java" />
         <option value="$PROJECT_DIR$/src/AgeFilter.java" />
-        <option value="$PROJECT_DIR$/test/BigBirthdayTest.java" />
+        <option value="$PROJECT_DIR$/src/guest/filters/AgeFilter.java" />
+        <option value="$PROJECT_DIR$/src/guest/filters/CountryFilter.java" />
+        <option value="$PROJECT_DIR$/src/guest/filters/Filter.java" />
+        <option value="$PROJECT_DIR$/src/BigBirthday.java" />
         <option value="$PROJECT_DIR$/src/People.java" />
         <option value="$PROJECT_DIR$/test/PeopleTest.java" />
+        <option value="$PROJECT_DIR$/test/BigBirthdayTest.java" />
       </list>
     </option>
   </component>
@@ -288,7 +262,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
+              <option name="myItemId" value="data" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -319,6 +293,7 @@
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/guest/filters" />
       <recent name="$PROJECT_DIR$/test/guest" />
       <recent name="$PROJECT_DIR$/src/guest" />
       <recent name="$PROJECT_DIR$/lib" />
@@ -335,67 +310,19 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.All in Big-Birthday">
-    <configuration default="false" name="PeopleTest.testFilter_returns_a_collection_people_after_applying_preset_filters" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="BigBirthday" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="Big-Birthday" />
+      <option name="MAIN_CLASS_NAME" value="BigBirthday" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="-a 35 -c Qatar" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PeopleTest" />
-      <option name="METHOD_NAME" value="testFilter_returns_a_collection_people_after_applying_preset_filters" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="PeopleTest.testFilter_returns_a_collection_people_after_applying_preset_multiple_filters" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="Big-Birthday" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PeopleTest" />
-      <option name="METHOD_NAME" value="testFilter_returns_a_collection_people_after_applying_preset_multiple_filters" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
       <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="PeopleTest.testAboveAge_for_Age_as_String" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="Big-Birthday" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PeopleTest" />
-      <option name="METHOD_NAME" value="testAboveAge_for_Age_as_String" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
       <method />
     </configuration>
     <configuration default="false" name="PeopleTest.testAboveAge_for_Age_as_int" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
@@ -428,6 +355,48 @@
       <option name="MAIN_CLASS_NAME" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="package" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="BigBirthdayTest.testApplyFilters_applies_filters_and_returns_a_people_object_for_age" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="Big-Birthday" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BigBirthdayTest" />
+      <option name="METHOD_NAME" value="testApplyFilters_applies_filters_and_returns_a_people_object_for_age" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="BigBirthdayTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="Big-Birthday" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BigBirthdayTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -622,19 +591,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.PeopleTest.testFilter_returns_a_collection_people_after_applying_preset_filters" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.PeopleTest.testFilter_returns_a_collection_people_after_applying_preset_multiple_filters" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.PeopleTest.testAboveAge_for_Age_as_String" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.PeopleTest.testAboveAge_for_Age_as_int" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.All in Big-Birthday" />
+      <item index="0" class="java.lang.String" itemvalue="Application.BigBirthday" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.PeopleTest.testAboveAge_for_Age_as_int" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.All in Big-Birthday" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.BigBirthdayTest.testApplyFilters_applies_filters_and_returns_a_people_object_for_age" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.BigBirthdayTest" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="JUnit.All in Big-Birthday" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.PeopleTest.testAboveAge_for_Age_as_int" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.PeopleTest.testAboveAge_for_Age_as_String" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.PeopleTest.testFilter_returns_a_collection_people_after_applying_preset_filters" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.PeopleTest.testFilter_returns_a_collection_people_after_applying_preset_multiple_filters" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.BigBirthdayTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.BigBirthdayTest.testApplyFilters_applies_filters_and_returns_a_people_object_for_age" />
+        <item index="3" class="java.lang.String" itemvalue="Application.BigBirthday" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.PeopleTest.testAboveAge_for_Age_as_int" />
       </list>
     </recent_temporary>
   </component>
@@ -652,35 +621,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_Big-Birthday - 2016.03.09 at 16h 25m 08s.xml">
+    <history-entry file="All_in_Big-Birthday - 2016.03.09 at 16h 43m 39s.xml">
       <configuration name="All in Big-Birthday" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_Big-Birthday - 2016.03.09 at 16h 36m 48s.xml">
+    <history-entry file="All_in_Big-Birthday - 2016.03.09 at 16h 45m 29s.xml">
       <configuration name="All in Big-Birthday" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BigBirthdayTest_testPrint - 2016.03.09 at 16h 24m 59s.xml">
-      <configuration name="BigBirthdayTest.testPrint" configurationId="JUnit" />
+    <history-entry file="All_in_Big-Birthday - 2016.03.09 at 16h 46m 27s.xml">
+      <configuration name="All in Big-Birthday" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PeopleTest - 2016.03.09 at 16h 39m 39s.xml">
-      <configuration name="PeopleTest" configurationId="JUnit" />
+    <history-entry file="All_in_Big-Birthday - 2016.03.09 at 16h 46m 47s.xml">
+      <configuration name="All in Big-Birthday" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PeopleTest_testAboveAge_for_Age_as_String - 2016.03.09 at 16h 42m 27s.xml">
-      <configuration name="PeopleTest.testAboveAge_for_Age_as_String" configurationId="JUnit" />
+    <history-entry file="All_in_Big-Birthday - 2016.03.09 at 16h 58m 12s.xml">
+      <configuration name="All in Big-Birthday" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PeopleTest_testAboveAge_for_Age_as_String - 2016.03.09 at 16h 43m 13s.xml">
-      <configuration name="PeopleTest.testAboveAge_for_Age_as_String" configurationId="JUnit" />
+    <history-entry file="All_in_Big-Birthday - 2016.03.09 at 17h 02m 39s.xml">
+      <configuration name="All in Big-Birthday" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BigBirthdayTest - 2016.03.09 at 17h 03m 57s.xml">
+      <configuration name="BigBirthdayTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BigBirthdayTest_testApplyFilters_applies_filters_and_returns_a_people_object_for_age - 2016.03.09 at 16h 58m 58s.xml">
+      <configuration name="BigBirthdayTest.testApplyFilters_applies_filters_and_returns_a_people_object_for_age" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BigBirthdayTest_testApplyFilters_applies_filters_and_returns_a_people_object_for_age - 2016.03.09 at 16h 59m 07s.xml">
+      <configuration name="BigBirthdayTest.testApplyFilters_applies_filters_and_returns_a_people_object_for_age" configurationId="JUnit" />
     </history-entry>
     <history-entry file="PeopleTest_testAboveAge_for_Age_as_int - 2016.03.09 at 16h 43m 28s.xml">
       <configuration name="PeopleTest.testAboveAge_for_Age_as_int" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PeopleTest_testFilter_returns_a_collection_people_after_applying_preset_filters - 2016.03.09 at 16h 39m 35s.xml">
-      <configuration name="PeopleTest.testFilter_returns_a_collection_people_after_applying_preset_filters" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PeopleTest_testFilter_returns_a_collection_people_after_applying_preset_filters - 2016.03.09 at 16h 42m 13s.xml">
-      <configuration name="PeopleTest.testFilter_returns_a_collection_people_after_applying_preset_filters" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PeopleTest_testFilter_returns_a_collection_people_after_applying_preset_multiple_filters - 2016.03.09 at 16h 41m 56s.xml">
-      <configuration name="PeopleTest.testFilter_returns_a_collection_people_after_applying_preset_multiple_filters" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView" selected-index="1">
@@ -743,24 +712,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test/CliTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guest/MailTemplate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#321#322#0" expanded="false" />
-            <element signature="e#352#353#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/guest/specifics/Name.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -922,8 +873,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding>
-            <element signature="e#1313#1314#0" expanded="true" />
-            <element signature="e#1349#1350#0" expanded="true" />
+            <element signature="e#1313#1314#0" expanded="false" />
+            <element signature="e#1349#1350#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -932,14 +883,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/records">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="16" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
           <folding />
         </state>
       </provider>
@@ -1067,7 +1010,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="27" column="84" selection-start-line="27" selection-start-column="84" selection-end-line="27" selection-end-column="84" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1106,23 +1049,90 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AgeFilter.java">
+    <entry file="file://$PROJECT_DIR$/src/guest/filters/AgeFilter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
           <folding>
-            <element signature="e#108#109#0" expanded="true" />
-            <element signature="e#138#139#0" expanded="true" />
-            <element signature="e#194#195#0" expanded="true" />
-            <element signature="e#239#240#0" expanded="true" />
+            <element signature="e#132#133#0" expanded="false" />
+            <element signature="e#162#163#0" expanded="false" />
+            <element signature="e#218#219#0" expanded="false" />
+            <element signature="e#263#264#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guest/filters/CountryFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+          <folding>
+            <element signature="e#154#155#0" expanded="true" />
+            <element signature="e#192#193#0" expanded="true" />
+            <element signature="e#248#249#0" expanded="true" />
+            <element signature="e#299#300#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guest/filters/Filter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/records">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="16" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/src.zip!/java/util/Set.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="12.517891">
+          <caret line="368" column="12" selection-start-line="368" selection-start-column="12" selection-end-line="368" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/src.zip!/java/util/HashSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="88" column="13" selection-start-line="88" selection-start-column="13" selection-end-line="88" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/BigBirthday.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="43" column="9" selection-start-line="43" selection-start-column="9" selection-end-line="43" selection-end-column="9" />
+          <caret line="84" column="22" selection-start-line="84" selection-start-column="22" selection-end-line="84" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/People.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="82" column="80" selection-start-line="82" selection-start-column="80" selection-end-line="82" selection-end-column="80" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#706#707#0" expanded="true" />
+            <element signature="e#741#742#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/PeopleTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="58" column="31" selection-start-line="58" selection-start-column="31" selection-end-line="58" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1131,52 +1141,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/BigBirthdayTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="59" column="38" selection-start-line="59" selection-start-column="38" selection-end-line="59" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Filter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CountryFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
-          <folding>
-            <element signature="e#130#131#0" expanded="true" />
-            <element signature="e#168#169#0" expanded="true" />
-            <element signature="e#224#225#0" expanded="true" />
-            <element signature="e#275#276#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/People.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="49" column="30" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#677#678#0" expanded="true" />
-            <element signature="e#712#713#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/PeopleTest.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.50282484">
-          <caret line="44" column="5" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="77" column="5" selection-start-line="77" selection-start-column="5" selection-end-line="77" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -1,4 +1,5 @@
 import guest.Guest;
+import guest.filters.Filter;
 
 import java.util.HashSet;
 import java.util.Iterator;
@@ -79,11 +80,14 @@ public class People implements Iterable<Guest>{
 
         People people1 = (People) o;
 
-        return people.equals(people1.people);
+        return people.equals(people1.people) && filters.equals(people1.filters);
+
     }
 
     @Override
     public int hashCode() {
-        return people.hashCode();
+        int result = people.hashCode();
+        result = 31 * result + filters.hashCode();
+        return result;
     }
 }

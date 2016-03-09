@@ -1,4 +1,7 @@
 import guest.Guest;
+import guest.filters.AgeFilter;
+import guest.filters.CountryFilter;
+import guest.filters.Filter;
 import guest.specifics.*;
 
 import org.junit.Before;
@@ -53,7 +56,7 @@ public class PeopleTest {
 
     @Test
     public void testHashCode_returns_a_unique_number_according_to_content() throws Exception {
-        assertEquals(-715575347, people.hashCode());
+        assertEquals(-707999277, people.hashCode());
     }
 
     @Test

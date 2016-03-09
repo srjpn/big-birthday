@@ -1,5 +1,7 @@
 import guest.Guest;
 import guest.MailTemplate;
+import guest.filters.AgeFilter;
+import guest.filters.CountryFilter;
 import guest.specifics.Address;
 import guest.specifics.Age;
 import guest.specifics.Gender;
@@ -29,7 +31,7 @@ public class BigBirthday {
 
             MailTemplate mailTemplate = MailTemplate.createTemplate(template);
 
-            People filteredPeople = birthday.applyFilters(new Cli(args).getOptions(),people);
+            People filteredPeople = birthday.applyFilters(new Cli(args).getOptions(),people).filter();
 
             birthday.print(mailTemplate, filteredPeople);
         }
@@ -76,10 +78,12 @@ public class BigBirthday {
             String command = (String) command1;
             switch (command) {
                 case "c":
-                    collection = collection.filterByCountry((String) filters.get(command));
+                    String country = (String) filters.get(command);
+                    collection.addFilter(new CountryFilter(country));
                     break;
                 case "a":
-                    collection = collection.aboveAge((String) filters.get(command));
+                    int age = Integer.parseInt((String) filters.get(command));
+                    collection.addFilter(new AgeFilter(age));
                     break;
             }
         }

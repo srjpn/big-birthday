@@ -1,3 +1,5 @@
+package guest.filters;
+
 import guest.Guest;
 
 public class CountryFilter implements Filter {

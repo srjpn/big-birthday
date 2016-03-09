@@ -5,6 +5,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.assertEquals;
 
 public class PeopleTest {
     People people;
@@ -49,5 +50,10 @@ public class PeopleTest {
         for (Guest person : aboveAge)
             assertTrue(person.isOlderThan(37));
 
+    }
+
+    @Test
+    public void testHashCode_returns_a_unique_number_according_to_content() throws Exception {
+        assertEquals(830452300, people.hashCode());
     }
 }

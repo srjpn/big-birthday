@@ -50,4 +50,19 @@ public class People implements Iterable<Guest>{
     public Iterator<Guest> iterator() {
         return people.iterator();
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof People)) return false;
+
+        People people1 = (People) o;
+
+        return people.equals(people1.people);
+    }
+
+    @Override
+    public int hashCode() {
+        return people.hashCode();
+    }
 }

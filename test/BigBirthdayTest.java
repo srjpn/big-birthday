@@ -9,6 +9,7 @@ import org.junit.Test;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
+import java.util.HashMap;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -57,5 +58,40 @@ public class BigBirthdayTest {
         birthday.print(template, people);
         assertEquals("Sooraj Parameswaran\n" +
                 "Shibi Reguvaran\n",outContent.toString());
+    }
+
+    @Test
+    public void testApplyFilters_applies_filters_and_returns_a_people_object_for_age() throws Exception {
+        People people = new People();
+        people.add(sooraj);
+        people.add(shibi);
+
+        HashMap<String,String> filters = new HashMap<>();
+        filters.put("a","21");
+
+        People sortedPeople = birthday.applyFilters(filters, people);
+
+        People expected = new People();
+        expected.add(sooraj);
+
+        assertEquals(expected, sortedPeople);
+    }
+
+    @Test
+    public void testApplyFilters_applies_filters_and_returns_a_people_object_for_country() throws Exception {
+        People people = new People();
+        people.add(sooraj);
+        people.add(shibi);
+
+        HashMap<String,String> filters = new HashMap<>();
+        filters.put("c","India");
+
+        People sortedPeople = birthday.applyFilters(filters, people);
+
+        People expected = new People();
+        expected.add(sooraj);
+        expected.add(shibi);
+
+        assertEquals(expected, sortedPeople);
     }
 }

@@ -1,5 +1,7 @@
 import org.apache.commons.cli.*;
 
+import java.util.HashMap;
+
 public class Cli {
     private String[] args = null;
     private final Options options = new Options();
@@ -19,11 +21,11 @@ public class Cli {
         this.parsedObj = parser.parse(options, args);
     }
 
-    public String getOptions() throws ParseException{
+    public HashMap<String, String> getOptions() throws ParseException{
         if(null == parsedObj) this.parse();
-        String result = "";
+        HashMap<String, String> result = new HashMap<>();
         Option[] options = parsedObj.getOptions();
-        for (Option option : options) result = result.concat(option.getOpt());
+        for (Option option : options) result.put(option.getOpt(),option.getValue());
         return  result;
     }
 

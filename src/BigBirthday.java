@@ -4,6 +4,10 @@ import guest.specifics.Address;
 import guest.specifics.Age;
 import guest.specifics.Gender;
 import guest.specifics.Name;
+import org.apache.commons.cli.ParseException;
+
+import java.util.HashMap;
+import java.util.Set;
 
 public class BigBirthday {
     private static final String FILE = "data/records";
@@ -23,23 +27,11 @@ public class BigBirthday {
 
             People people = birthday.createPersonFromCSV(data);
 
-            String commands = new Cli(args).getOptions();
-
             MailTemplate mailTemplate = MailTemplate.createTemplate(template);
 
-            for (int i = 0; i < commands.length(); i++) {
-                String command = String.valueOf(commands.charAt(i));
-                switch (command) {
-                    case "c":
-                        people = people.filterByCountry(arguments.getOptionValue(command));
-                        break;
-                    case "a":
-                        people = people.aboveAge(arguments.getOptionValue(command));
-                        break;
-                }
-            }
+            People filteredPeople = birthday.applyFilters(new Cli(args).getOptions(),people);
 
-            birthday.print(mailTemplate, people);
+            birthday.print(mailTemplate, filteredPeople);
         }
         catch (Exception e){
             System.out.println(e.getMessage());
@@ -50,7 +42,6 @@ public class BigBirthday {
             System.out.println(e.getMessage());
             System.exit(1);
         }
-
     }
 
     public People createPersonFromCSV(String data) throws Exception, Error {
@@ -77,5 +68,21 @@ public class BigBirthday {
         for (Guest guest : people) {
             System.out.println(template.generate(guest));
         }
+    }
+
+    public People applyFilters(HashMap filters, People collection) throws ParseException {
+        Set commands = filters.keySet();
+        for (Object command1 : commands) {
+            String command = (String) command1;
+            switch (command) {
+                case "c":
+                    collection = collection.filterByCountry((String) filters.get(command));
+                    break;
+                case "a":
+                    collection = collection.aboveAge((String) filters.get(command));
+                    break;
+            }
+        }
+        return collection;
     }
 }

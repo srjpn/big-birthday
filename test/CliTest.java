@@ -4,6 +4,7 @@ import org.junit.Test;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
+import java.util.HashMap;
 
 import static org.junit.Assert.*;
 
@@ -53,7 +54,12 @@ public class CliTest {
     public void it_gives_a_string_of_all_sample() throws ParseException {
         String[] sampleArgs = {"-a","18","-c","Bangladesh"};
         Cli sample = new Cli(sampleArgs);
-        assertEquals("ac",sample.getOptions());
+
+        HashMap<String,String> expected = new HashMap<>();
+        expected.put("a","18");
+        expected.put("c","Bangladesh");
+
+        assertEquals(expected,sample.getOptions());
     }
 
     @Test

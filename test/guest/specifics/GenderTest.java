@@ -17,8 +17,9 @@ public class GenderTest {
         try{
             Gender.defineGenderAs("kozhi");
         }
-        catch (Exception e){
-            assertEquals("Thazhe nokki parayada...",e.getMessage());
+        catch (Error e){
+            assertEquals("Error in data given....\n" +
+                    "Instead of gender something else is given....",e.getMessage());
         }
     }
 

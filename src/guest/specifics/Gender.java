@@ -7,11 +7,11 @@ public class Gender {
         this.gender = gender;
     }
 
-    public static Gender defineGenderAs(String gender) throws Exception {
+    public static Gender defineGenderAs(String gender) throws Exception, Error {
         String genderInUpperCase = gender.toUpperCase();
         if(genderInUpperCase.equals("FEMALE") || genderInUpperCase.equals("MALE") )
             return new Gender(genderInUpperCase);
-        throw new Exception("Thazhe nokki parayada...");
+        throw new Error("Error in data given....\nInstead of gender something else is given....");
     }
 
     public String getInitial(){

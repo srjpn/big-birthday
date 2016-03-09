@@ -19,4 +19,20 @@ public class Gender {
             return "Mr";
         return "Mrs";
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Gender)) return false;
+
+        Gender gender1 = (Gender) o;
+
+        return gender.equals(gender1.gender);
+
+    }
+
+    @Override
+    public int hashCode() {
+        return gender.hashCode();
+    }
 }

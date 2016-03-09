@@ -54,5 +54,27 @@ public class Guest {
     public boolean isOlderThan(int threshold){
         return this.age.isAgeAbove(threshold);
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Guest)) return false;
+
+        Guest guest = (Guest) o;
+
+        return name.equals(guest.name)
+                && gender.equals(guest.gender)
+                && age.equals(guest.age)
+                && address.equals(guest.address);
+    }
+
+    @Override
+    public int hashCode() {
+        int result = name.hashCode();
+        result = 31 * result + gender.hashCode();
+        result = 31 * result + age.hashCode();
+        result = 31 * result + address.hashCode();
+        return result;
+    }
 }
 

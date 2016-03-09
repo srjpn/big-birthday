@@ -17,4 +17,9 @@ public class AgeTest {
         Age older = new Age(18);
         assertTrue(!older.isAgeAbove(20));
     }
+
+    @Test
+    public void testEquals_returns_true_for_simlar_objects() throws Exception {
+
+    }
 }

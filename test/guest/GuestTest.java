@@ -8,6 +8,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.assertEquals;
 
 public class GuestTest {
     Guest guest;
@@ -41,5 +42,18 @@ public class GuestTest {
     @Test
     public void testIsOlderThan_returns_true_if_the_person_is_older_than_the_given_age() throws Exception {
         assertTrue(guest.isOlderThan(15));
+    }
+
+    @Test
+    public void testHashCode_returns_a_unique_code_generated_according_to_the_content() throws Exception {
+        Name name = new Name("Sarath", "Sasindrakumar");
+        Gender gender = Gender.defineGenderAs("male");
+        Address address = new Address("Thrissur", "Kerala", "India");
+        Age age = new Age(21);
+
+        Guest person = new Guest(name, gender, age, address);
+
+        assertEquals(-347206009,guest.hashCode());
+        assertEquals(-1696492705,person.hashCode());
     }
 }

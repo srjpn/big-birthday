@@ -30,4 +30,22 @@ public class Name {
         return this.firstNameFirst();
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Name)) return false;
+
+        Name name = (Name) o;
+
+        return firstName.equals(name.firstName)
+                && secondName.equals(name.secondName);
+
+    }
+
+    @Override
+    public int hashCode() {
+        int result = firstName.hashCode();
+        result = 31 * result + secondName.hashCode();
+        return result;
+    }
 }

@@ -18,8 +18,7 @@ public class People implements Iterable<Guest>{
         People peopleFromCity = new People();
 
         for (Guest person : people)
-            if (person.isFromCity(city))
-                peopleFromCity.add(person);
+            if (person.isFromCity(city)) peopleFromCity.add(person);
 
         return peopleFromCity;
     }
@@ -28,8 +27,7 @@ public class People implements Iterable<Guest>{
         People peopleFromCountry = new People();
 
         for (Guest person : people)
-            if (person.isFromCountry(country))
-                peopleFromCountry.add(person);
+            if (person.isFromCountry(country)) peopleFromCountry.add(person);
 
         return peopleFromCountry;
     }
@@ -38,9 +36,7 @@ public class People implements Iterable<Guest>{
         People peopleAboveAge = new People();
 
         for (Guest person : people)
-            if (person.isOlderThan(age)) {
-                peopleAboveAge.add(person);
-            }
+            if (person.isOlderThan(age)) peopleAboveAge.add(person);
 
         return peopleAboveAge;
     }
@@ -50,6 +46,7 @@ public class People implements Iterable<Guest>{
         return aboveAge(thresholdsAge);
     }
 
+    @Override
     public Iterator<Guest> iterator() {
         return people.iterator();
     }

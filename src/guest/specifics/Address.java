@@ -25,4 +25,24 @@ public class Address {
     public String toString() {
         return this.city+" "+this.state+"\n"+this.country;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Address)) return false;
+
+        Address address = (Address) o;
+
+        return city.equals(address.city)
+                && state.equals(address.state)
+                && country.equals(address.country);
+    }
+
+    @Override
+    public int hashCode() {
+        int result = city.hashCode();
+        result = 31 * result + state.hashCode();
+        result = 31 * result + country.hashCode();
+        return result;
+    }
 }

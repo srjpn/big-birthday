@@ -50,14 +50,14 @@ public class BigBirthdayTest {
         System.setOut(new PrintStream(outContent));
 
         People people = new People();
-        people.add(sooraj);
         people.add(shibi);
+        people.add(sooraj);
 
         MailTemplate template = MailTemplate.createTemplate("first_name last_name");
 
         birthday.print(template, people);
-        assertEquals("Sooraj Parameswaran\n" +
-                "Shibi Reguvaran\n",outContent.toString());
+        assertEquals("Shibi Reguvaran\n" +
+                "Sooraj Parameswaran\n",outContent.toString());
     }
 
     @Test

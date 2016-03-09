@@ -39,21 +39,40 @@ public class PeopleTest {
 
     @Test
     public void testAboveAge_for_Age_as_int() throws Exception {
-        People aboveAge = people.aboveAge(37);
+        People aboveAge = people.aboveAge(38);
         for (Guest person : aboveAge)
-            assertTrue(person.isOlderThan(37));
+            assertTrue(person.equals(richard));
     }
 
     @Test
     public void testAboveAge_for_Age_as_String() throws Exception {
-        People aboveAge = people.aboveAge("37");
+        People aboveAge = people.aboveAge("38");
         for (Guest person : aboveAge)
-            assertTrue(person.isOlderThan(37));
-
+            assertTrue(person.equals(richard));
     }
 
     @Test
     public void testHashCode_returns_a_unique_number_according_to_content() throws Exception {
-        assertEquals(830452300, people.hashCode());
+        assertEquals(-715575347, people.hashCode());
+    }
+
+    @Test
+    public void testFilter_returns_a_collection_people_after_applying_preset_filters() throws Exception {
+        Filter countryFilter = new CountryFilter("India");
+        people.addFilter(countryFilter);
+
+        People fromCountry = people.filter();
+        for (Guest person : fromCountry) assertTrue(person.equals(smrithi));
+    }
+
+    @Test
+    public void testFilter_returns_a_collection_people_after_applying_preset_multiple_filters() throws Exception {
+        Filter countryFilter = new CountryFilter("USA");
+        Filter ageFilter = new AgeFilter(37);
+        people.addFilter(countryFilter);
+        people.addFilter(ageFilter);
+
+        People fromCountry = people.filter();
+        for (Guest person : fromCountry) assertTrue(person.equals(richard));
     }
 }

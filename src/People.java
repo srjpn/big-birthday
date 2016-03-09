@@ -1,13 +1,16 @@
 import guest.Guest;
 
-import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.Iterator;
+import java.util.Set;
 
 public class People implements Iterable<Guest>{
-    private final ArrayList<Guest> people;
+    private final Set<Guest> people;
+    private HashSet<Filter> filters;
 
     public People() {
-        this.people = new ArrayList<>();
+        this.people = new HashSet<>();
+        this.filters = new HashSet<>();
     }
 
     public void add(Guest guest){
@@ -21,6 +24,24 @@ public class People implements Iterable<Guest>{
             if (person.isFromCity(city)) peopleFromCity.add(person);
 
         return peopleFromCity;
+    }
+
+    public void addFilter(Filter filter){
+        filters.add(filter);
+    }
+
+    public People filter(){
+        People peopleFromCountry = new People();
+
+        for (Guest person : people){
+            int status = 0;
+            for (Filter filter : filters)
+                if (filter.filter(person)) status++;
+            if(status==filters.size())
+                peopleFromCountry.add(person);
+        }
+
+        return peopleFromCountry;
     }
 
     public People filterByCountry(String country){

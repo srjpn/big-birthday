@@ -1,6 +1,7 @@
 package guest;
 
 import guest.specifics.Address;
+import guest.specifics.Age;
 import guest.specifics.Gender;
 import guest.specifics.Name;
 import org.junit.Test;
@@ -20,8 +21,9 @@ public class MailTemplateTest {
         Name name = new Name("Sooraj", "Parameswaran");
         Gender gender = Gender.defineGenderAs("male");
         Address address = new Address("Thrissur", "Kerala", "India");
+        Age age = new Age(20);
 
-        Guest guest = new Guest(name, gender, 20, address);
+        Guest guest = new Guest(name, gender, age, address);
 
         MailTemplate mailTemplate = MailTemplate.createTemplate("tiTle. firSt_name last_name\ncity, State\ncouNtry");
 

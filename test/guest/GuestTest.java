@@ -1,6 +1,7 @@
 package guest;
 
 import guest.specifics.Address;
+import guest.specifics.Age;
 import guest.specifics.Gender;
 import guest.specifics.Name;
 import org.junit.Before;
@@ -16,8 +17,9 @@ public class GuestTest {
         Name name = new Name("Sooraj", "Parameswaran");
         Gender gender = Gender.defineGenderAs("male");
         Address address = new Address("Thrissur", "Kerala", "India");
+        Age age = new Age(21);
 
-        guest = new Guest(name, gender, 21, address);
+        guest = new Guest(name, gender, age, address);
     }
 
 

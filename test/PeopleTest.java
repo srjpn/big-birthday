@@ -14,9 +14,9 @@ public class PeopleTest {
 
     @Before
     public void setup() throws Exception{
-        richard = new Guest(new Name("Richard","Philip"), Gender.defineGenderAs("male"),46,new Address("Losa","WC","USA"));
-        lincon = new Guest(new Name("Abraham","lincon"), Gender.defineGenderAs("male"),21,new Address("Mada","New York","USA"));
-        smrithi = new Guest(new Name("Smrithi","Irani"), Gender.defineGenderAs("female"),37,new Address("Malapuram","Kerala","India"));
+        richard = new Guest(new Name("Richard","Philip"), Gender.defineGenderAs("male"),new Age(46),new Address("Losa","WC","USA"));
+        lincon = new Guest(new Name("Abraham","lincon"), Gender.defineGenderAs("male"),new Age(21),new Address("Mada","New York","USA"));
+        smrithi = new Guest(new Name("Smrithi","Irani"), Gender.defineGenderAs("female"),new Age(37),new Address("Malapuram","Kerala","India"));
 
         people = new People();
         people.add(richard);

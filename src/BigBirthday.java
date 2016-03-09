@@ -1,6 +1,7 @@
 import guest.Guest;
 import guest.MailTemplate;
 import guest.specifics.Address;
+import guest.specifics.Age;
 import guest.specifics.Gender;
 import guest.specifics.Name;
 
@@ -60,7 +61,7 @@ public class BigBirthday {
             String[] personDetails = personData.split(",");
             Name name = new Name(personDetails[0],personDetails[1]);
             Gender gender = Gender.defineGenderAs(personDetails[2]);
-            Integer age = Integer.parseUnsignedInt(personDetails[3]);
+            Age age = new Age(Integer.parseUnsignedInt(personDetails[3]));
             Address address = new Address(personDetails[4],personDetails[5],personDetails[6]);
             Guest guest = new Guest(name, gender, age, address);
             guests.add(guest);

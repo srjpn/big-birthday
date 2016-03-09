@@ -5,10 +5,10 @@ import guest.specifics.*;
 public class Guest {
     private final Name name;
     private final Gender gender;
-    private final int age;
+    private final Age age;
     private final Address address;
 
-    public Guest(Name name, Gender gender, int age, Address address) {
+    public Guest(Name name, Gender gender, Age age, Address address) {
         this.name = name;
         this.gender = gender;
         this.age = age;
@@ -52,7 +52,7 @@ public class Guest {
     }
 
     public boolean isOlderThan(int threshold){
-        return this.age >= threshold;
+        return this.age.isAgeAbove(threshold);
     }
 }
 

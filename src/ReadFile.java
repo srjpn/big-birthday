@@ -15,7 +15,7 @@ public class ReadFile {
         this.content = "";
     }
 
-    static ReadFile addFile(String file) throws Exception {
+    public static ReadFile addFile(String file) throws Exception {
         ReadFile self = new ReadFile(file);
         try{
             self.addInputStream();

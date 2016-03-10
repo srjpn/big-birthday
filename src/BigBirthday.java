@@ -1,9 +1,8 @@
 import bigBirthday.Cli;
-import bigBirthday.GuestParser;
-import bigBirthday.LabelPrinter;
+import bigBirthday.guest.GuestParser;
+import bigBirthday.printer.LabelPrinter;
 import bigBirthday.People;
-import bigBirthday.filters.FilterAdder;
-import bigBirthday.printer.GuestPrinter;
+import bigBirthday.guest.filters.FilterAdder;
 import bigBirthday.template.GuestTemplate;
 import bigBirthday.template.MailTemplate;
 
@@ -20,7 +19,7 @@ public class BigBirthday {
                 return;
             }
 
-            People people = GuestParser.createPersonFromCSV(data);
+            People people = new GuestParser(data).createPersonFromCSV();
 
             GuestTemplate template = MailTemplate.createTemplate("TITLE. FIRST_NAME LAST_NAME\nCITY, STATE, COUNTRY\n");
 
@@ -28,9 +27,7 @@ public class BigBirthday {
 
             People filteredPeople = filterAdder.applyFilters(people).filter();
 
-            GuestPrinter printer = new LabelPrinter(template);
-
-            printer.print(filteredPeople);
+            new LabelPrinter(template).print(filteredPeople);
         }
         catch (Exception e){
             System.out.println(e.getMessage());

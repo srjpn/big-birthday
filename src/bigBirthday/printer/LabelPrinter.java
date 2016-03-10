@@ -1,6 +1,7 @@
-package bigBirthday;
+package bigBirthday.printer;
 
-import bigBirthday.printer.GuestPrinter;
+import bigBirthday.People;
+import bigBirthday.guest.Guest;
 import bigBirthday.template.GuestTemplate;
 
 public class LabelPrinter implements GuestPrinter {

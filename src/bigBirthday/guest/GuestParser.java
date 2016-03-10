@@ -1,13 +1,19 @@
-package bigBirthday;
+package bigBirthday.guest;
 
-import bigBirthday.specifics.Address;
-import bigBirthday.specifics.Age;
-import bigBirthday.specifics.Gender;
-import bigBirthday.specifics.Name;
+import bigBirthday.People;
+import bigBirthday.guest.specifics.Address;
+import bigBirthday.guest.specifics.Age;
+import bigBirthday.guest.specifics.Gender;
+import bigBirthday.guest.specifics.Name;
 
 public class GuestParser {
+    private String data;
 
-    public static People createPersonFromCSV(String data) throws Exception, Error {
+    public GuestParser(String data) {
+        this.data = data;
+    }
+
+    public People createPersonFromCSV() throws Exception, Error {
         String[] csvData = data.split("\n");
         People guests = new People();
 
@@ -18,7 +24,7 @@ public class GuestParser {
         return guests;
     }
 
-    private static Guest createGuest(String personData) throws Exception, Error {
+    private Guest createGuest(String personData) throws Exception, Error {
         String[] personDetails = personData.split(",");
         Name name = new Name(personDetails[0],personDetails[1]);
         Gender gender = Gender.defineGenderAs(personDetails[2]);

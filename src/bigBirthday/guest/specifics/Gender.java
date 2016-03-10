@@ -1,4 +1,4 @@
-package bigBirthday.specifics;
+package bigBirthday.guest.specifics;
 
 public class Gender {
     private final String gender;

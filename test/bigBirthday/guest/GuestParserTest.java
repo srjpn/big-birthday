@@ -1,9 +1,10 @@
-package bigBirthday;
+package bigBirthday.guest;
 
-import bigBirthday.specifics.Address;
-import bigBirthday.specifics.Age;
-import bigBirthday.specifics.Gender;
-import bigBirthday.specifics.Name;
+import bigBirthday.People;
+import bigBirthday.guest.specifics.Address;
+import bigBirthday.guest.specifics.Age;
+import bigBirthday.guest.specifics.Gender;
+import bigBirthday.guest.specifics.Name;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -21,8 +22,8 @@ public class GuestParserTest {
 
     @Test
     public void testCreatePersonFromCSV() throws Exception {
-        People result = GuestParser.createPersonFromCSV("Sooraj,Parameswaran,Male,21,Thrissur,Kerala,India\n"+
-                "Shibi,Reguvaran,Female,20,Thrissur,Kerala,India\n");
+        People result = new GuestParser("Sooraj,Parameswaran,Male,21,Thrissur,Kerala,India\n"+
+                "Shibi,Reguvaran,Female,20,Thrissur,Kerala,India\n").createPersonFromCSV();
 
         for (Object person : result) {
             assertTrue(person.equals(sooraj) || person.equals(shibi));

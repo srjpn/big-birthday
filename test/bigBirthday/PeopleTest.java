@@ -1,12 +1,13 @@
 package bigBirthday;
 
-import bigBirthday.filters.AgeFilter;
-import bigBirthday.filters.CountryFilter;
-import bigBirthday.filters.Filter;
-import bigBirthday.specifics.Address;
-import bigBirthday.specifics.Age;
-import bigBirthday.specifics.Gender;
-import bigBirthday.specifics.Name;
+import bigBirthday.guest.filters.AgeFilter;
+import bigBirthday.guest.filters.CountryFilter;
+import bigBirthday.guest.filters.Filter;
+import bigBirthday.guest.Guest;
+import bigBirthday.guest.specifics.Address;
+import bigBirthday.guest.specifics.Age;
+import bigBirthday.guest.specifics.Gender;
+import bigBirthday.guest.specifics.Name;
 import org.junit.Before;
 import org.junit.Test;
 

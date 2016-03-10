@@ -1,6 +1,5 @@
 package bigBirthday.guest.specifics;
 
-import bigBirthday.specifics.Gender;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

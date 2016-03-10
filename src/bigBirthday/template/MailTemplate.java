@@ -1,8 +1,8 @@
 package bigBirthday.template;
 
-import bigBirthday.specifics.Address;
-import bigBirthday.specifics.Gender;
-import bigBirthday.specifics.Name;
+import bigBirthday.guest.specifics.Address;
+import bigBirthday.guest.specifics.Gender;
+import bigBirthday.guest.specifics.Name;
 
 public class MailTemplate implements GuestTemplate {
     private final String template;

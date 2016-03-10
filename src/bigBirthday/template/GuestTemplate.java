@@ -1,8 +1,8 @@
 package bigBirthday.template;
 
-import bigBirthday.specifics.Address;
-import bigBirthday.specifics.Gender;
-import bigBirthday.specifics.Name;
+import bigBirthday.guest.specifics.Address;
+import bigBirthday.guest.specifics.Gender;
+import bigBirthday.guest.specifics.Name;
 
 public interface GuestTemplate {
     String generate(Name name, Gender gender, Address address);

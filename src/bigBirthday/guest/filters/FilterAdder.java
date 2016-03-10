@@ -1,4 +1,4 @@
-package bigBirthday.filters;
+package bigBirthday.guest.filters;
 
 import bigBirthday.People;
 import org.apache.commons.cli.ParseException;

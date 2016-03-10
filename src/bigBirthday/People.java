@@ -1,6 +1,7 @@
 package bigBirthday;
 
-import bigBirthday.filters.Filter;
+import bigBirthday.guest.filters.Filter;
+import bigBirthday.guest.Guest;
 
 import java.util.HashSet;
 import java.util.Iterator;

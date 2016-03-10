@@ -1,10 +1,11 @@
-package bigBirthday;
+package bigBirthday.printer;
 
-import bigBirthday.printer.GuestPrinter;
-import bigBirthday.specifics.Address;
-import bigBirthday.specifics.Age;
-import bigBirthday.specifics.Gender;
-import bigBirthday.specifics.Name;
+import bigBirthday.People;
+import bigBirthday.guest.Guest;
+import bigBirthday.guest.specifics.Address;
+import bigBirthday.guest.specifics.Age;
+import bigBirthday.guest.specifics.Gender;
+import bigBirthday.guest.specifics.Name;
 import bigBirthday.template.MailTemplate;
 import org.junit.Before;
 import org.junit.Test;

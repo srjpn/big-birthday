@@ -1,6 +1,6 @@
-package bigBirthday.filters;
+package bigBirthday.guest.filters;
 
-import bigBirthday.Guest;
+import bigBirthday.guest.Guest;
 
 public class AgeFilter implements Filter {
     int age;

@@ -1,9 +1,8 @@
-package bigBirthday.guest.template;
+package bigBirthday.template;
 
-import bigBirthday.template.BorderedTemplate;
-import bigBirthday.specifics.Address;
-import bigBirthday.specifics.Gender;
-import bigBirthday.specifics.Name;
+import bigBirthday.guest.specifics.Address;
+import bigBirthday.guest.specifics.Gender;
+import bigBirthday.guest.specifics.Name;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

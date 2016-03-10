@@ -1,4 +1,4 @@
-package bigBirthday.specifics;
+package bigBirthday.guest.specifics;
 
 public class Address {
     private final String city, state, country;

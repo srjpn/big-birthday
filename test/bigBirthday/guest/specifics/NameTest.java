@@ -1,6 +1,5 @@
 package bigBirthday.guest.specifics;
 
-import bigBirthday.specifics.Name;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

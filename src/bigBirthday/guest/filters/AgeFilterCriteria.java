@@ -2,15 +2,15 @@ package bigBirthday.guest.filters;
 
 import bigBirthday.guest.Guest;
 
-public class AgeFilter implements Filter {
+public class AgeFilterCriteria implements FilterCriteria {
     int age;
 
-    public AgeFilter(int age) {
+    public AgeFilterCriteria(int age) {
         this.age = age;
     }
 
     @Override
-    public boolean filter(Guest guest) {
+    public boolean isToBeFiltered(Guest guest) {
         return guest.isOlderThan(age);
     }
 }

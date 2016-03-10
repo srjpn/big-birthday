@@ -9,11 +9,9 @@ import bigBirthday.guest.specifics.Name;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.util.HashMap;
-
 import static org.junit.Assert.assertEquals;
 
-public class FilterAdderTest {
+public class FilterTest {
     private Guest sooraj;
     private Guest shibi;
 
@@ -24,40 +22,20 @@ public class FilterAdderTest {
     }
 
     @Test
-    public void testApplyFilters_applies_filters_and_returns_a_people_object_for_age() throws Exception {
+    public void testFilter_filters_the_people_according_to_added_filtering_criteria() throws Exception {
         People people = new People();
         people.add(sooraj);
         people.add(shibi);
 
-        HashMap<String,String> filters = new HashMap<>();
-        filters.put("a","21");
+        Filter filter = new Filter();
 
-        FilterAdder filterAdder = new FilterAdder(filters);
+        filter.addCriteria(new AgeFilterCriteria(21));
 
-        People sortedPeople = filterAdder.applyFilters(people).filter();
 
-        People expected = new People();
-        expected.add(sooraj);
-
-        assertEquals(expected, sortedPeople);
-    }
-
-    @Test
-    public void testApplyFilters_applies_filters_and_returns_a_people_object_for_country() throws Exception {
-        People people = new People();
-        people.add(sooraj);
-        people.add(shibi);
-
-        HashMap<String,String> filters = new HashMap<>();
-        filters.put("c","India");
-
-        FilterAdder filterAdder = new FilterAdder(filters);
-
-        People sortedPeople = filterAdder.applyFilters(people).filter();
+        People sortedPeople = filter.filter(people);
 
         People expected = new People();
         expected.add(sooraj);
-        expected.add(shibi);
 
         assertEquals(expected, sortedPeople);
     }

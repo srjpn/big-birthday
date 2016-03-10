@@ -1,10 +1,15 @@
 import bigBirthday.Cli;
-import bigBirthday.guest.GuestParser;
-import bigBirthday.printer.LabelPrinter;
 import bigBirthday.People;
-import bigBirthday.guest.filters.FilterAdder;
+import bigBirthday.guest.GuestParser;
+import bigBirthday.guest.filters.AgeFilterCriteria;
+import bigBirthday.guest.filters.CountryFilterCriteria;
+import bigBirthday.guest.filters.Filter;
+import bigBirthday.printer.LabelPrinter;
 import bigBirthday.template.GuestTemplate;
 import bigBirthday.template.MailTemplate;
+
+import java.util.HashMap;
+import java.util.Set;
 
 public class BigBirthday {
     private static final String FILE = "data/records";
@@ -23,9 +28,11 @@ public class BigBirthday {
 
             GuestTemplate template = MailTemplate.createTemplate("TITLE. FIRST_NAME LAST_NAME\nCITY, STATE, COUNTRY\n");
 
-            FilterAdder filterAdder = new FilterAdder(new Cli(args).getOptions());
+            Filter filter = new Filter();
 
-            People filteredPeople = filterAdder.applyFilters(people).filter();
+            addFilters(arguments.getOptions(), filter);
+
+            People filteredPeople = filter.filter(people);
 
             new LabelPrinter(template).print(filteredPeople);
         }
@@ -37,6 +44,22 @@ public class BigBirthday {
         catch (Error e){
             System.out.println(e.getMessage());
             System.exit(1);
+        }
+    }
+
+    private static void addFilters(HashMap<String, String> options, Filter filter) {
+        Set<String> commands = options.keySet();
+        for (String command : commands) {
+            switch (command) {
+                case "c":
+                    String country = options.get(command);
+                    filter.addCriteria(new CountryFilterCriteria(country));
+                    break;
+                case "a":
+                    int age = Integer.parseInt(options.get(command));
+                    filter.addCriteria(new AgeFilterCriteria(age));
+                    break;
+            }
         }
     }
 }

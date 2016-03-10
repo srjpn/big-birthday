@@ -2,15 +2,15 @@ package bigBirthday.guest.filters;
 
 import bigBirthday.guest.Guest;
 
-public class CountryFilter implements Filter {
+public class CountryFilterCriteria implements FilterCriteria {
     private final String country;
 
-    public CountryFilter(String country) {
+    public CountryFilterCriteria(String country) {
         this.country = country;
     }
 
     @Override
-    public boolean filter(Guest guest) {
+    public boolean isToBeFiltered(Guest guest) {
         return guest.isFromCountry(country);
     }
 }

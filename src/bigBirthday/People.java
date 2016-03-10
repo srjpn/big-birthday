@@ -1,6 +1,5 @@
 package bigBirthday;
 
-import bigBirthday.guest.filters.Filter;
 import bigBirthday.guest.Guest;
 
 import java.util.HashSet;
@@ -9,42 +8,13 @@ import java.util.Set;
 
 public class People implements Iterable<Guest>{
     private final Set<Guest> people;
-    private HashSet<Filter> filters;
 
     public People() {
         this.people = new HashSet<>();
-        this.filters = new HashSet<>();
     }
 
     public void add(Guest guest){
         this.people.add(guest);
-    }
-
-    public People filterByCity(String city){
-        People peopleFromCity = new People();
-
-        for (Guest person : people)
-            if (person.isFromCity(city)) peopleFromCity.add(person);
-
-        return peopleFromCity;
-    }
-
-    public void addFilter(Filter filter){
-        filters.add(filter);
-    }
-
-    public People filter(){
-        People peopleFromCountry = new People();
-
-        for (Guest person : people){
-            int status = 0;
-            for (Filter filter : filters)
-                if (filter.filter(person)) status++;
-            if(status==filters.size())
-                peopleFromCountry.add(person);
-        }
-
-        return peopleFromCountry;
     }
 
     @Override
@@ -57,16 +27,14 @@ public class People implements Iterable<Guest>{
         if (this == o) return true;
         if (!(o instanceof People)) return false;
 
-        People people1 = (People) o;
+        People guests = (People) o;
 
-        return people.equals(people1.people) && filters.equals(people1.filters);
+        return people.equals(guests.people);
 
     }
 
     @Override
     public int hashCode() {
-        int result = people.hashCode();
-        result = 31 * result + filters.hashCode();
-        return result;
+        return people.hashCode();
     }
 }

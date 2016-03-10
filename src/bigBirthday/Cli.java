@@ -14,8 +14,8 @@ public class Cli {
         this.args = args;
 
         options.addOption("h", "help", false, "Show help");
-        options.addOption("c", "country", true, "Filter by country");
-        options.addOption("a", "age", true, "Filter by age");
+        options.addOption("c", "country", true, "FilterCriteria by country");
+        options.addOption("a", "age", true, "FilterCriteria by age");
     }
 
     private void parse() throws ParseException {

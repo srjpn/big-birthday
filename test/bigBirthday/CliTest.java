@@ -72,8 +72,8 @@ public class CliTest {
         Cli sample = new Cli(sampleArgs);
         sample.help();
         assertEquals("usage: BigBirthday\n" +
-                " -a,--age <arg>       Filter by age\n" +
-                " -c,--country <arg>   Filter by country\n" +
+                " -a,--age <arg>       FilterCriteria by age\n" +
+                " -c,--country <arg>   FilterCriteria by country\n" +
                 " -h,--help            Show help\n",outContent.toString());
     }
 }

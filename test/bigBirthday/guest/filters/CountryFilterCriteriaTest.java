@@ -7,24 +7,24 @@ import bigBirthday.guest.specifics.Gender;
 import bigBirthday.guest.specifics.Name;
 import org.junit.Test;
 
-import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
-public class AgeFilterTest {
+public class CountryFilterCriteriaTest {
 
     @Test
     public void testFilter_returns_true_for_the_item_to_be_filtered() throws Exception {
         Guest richard = new Guest(new Name("Richard","Philip"), Gender.defineGenderAs("male"),new Age(46),new Address("Losa","WC","USA"));
-        Filter filter = new AgeFilter(18);
+        FilterCriteria filterCriteria = new CountryFilterCriteria("USA");
 
-        assertTrue(filter.filter(richard));
+        assertTrue(filterCriteria.isToBeFiltered(richard));
     }
 
     @Test
     public void testFilter_returns_false_for_the_item_not_to_be_filtered() throws Exception {
         Guest richard = new Guest(new Name("Richard","Philip"), Gender.defineGenderAs("male"),new Age(46),new Address("Losa","WC","USA"));
-        Filter filter = new AgeFilter(50);
+        FilterCriteria filterCriteria = new CountryFilterCriteria("India");
 
-        assertFalse(filter.filter(richard));
+        assertFalse(filterCriteria.isToBeFiltered(richard));
     }
 }

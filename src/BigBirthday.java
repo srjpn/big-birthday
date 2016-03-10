@@ -28,7 +28,7 @@ public class BigBirthday {
 
             People people = birthday.createPersonFromCSV(data);
 
-            GuestTemplate template = new LastNameFirstBorderedTemplate("+","-","|");
+            GuestTemplate template = new LastNameFirstBorderedTemplate("*",".",":");
 
             People filteredPeople = birthday.applyFilters(new Cli(args).getOptions(),people).filter();
 

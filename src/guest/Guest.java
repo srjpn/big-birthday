@@ -1,6 +1,10 @@
 package guest;
 
-import guest.specifics.*;
+import guest.specifics.Address;
+import guest.specifics.Age;
+import guest.specifics.Gender;
+import guest.specifics.Name;
+import guest.template.GuestTemplate;
 
 public class Guest {
     private final Name name;
@@ -27,32 +31,12 @@ public class Guest {
         return address.getCountry().equals(country);
     }
 
-    protected String getInitial() {
-        return gender.getInitial();
-    }
-
-    protected String getFirstName() {
-        return name.getFirstName();
-    }
-
-    protected String getSecondName() {
-        return name.getSecondName();
-    }
-
-    protected String getCity() {
-        return address.getCity();
-    }
-
-    protected String getState() {
-        return address.getState();
-    }
-
-    protected String getCountry() {
-        return address.getCountry();
-    }
-
     public boolean isOlderThan(int threshold){
         return this.age.isAgeAbove(threshold);
+    }
+
+    public String getNameCard(GuestTemplate template){
+        return template.generate(name, gender, address);
     }
 
     @Override

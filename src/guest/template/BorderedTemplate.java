@@ -21,12 +21,12 @@ public class BorderedTemplate implements GuestTemplate {
     @Override
     public String generate(Name name, Gender gender, Address address) {
         String firstLine = format("%s. %s %s",gender.getInitial(),name.getFirstName(),name.getSecondName());
-        String secondLine = format("%s, %s",address.getCity(),address.getState(),address.getCountry());
+        String secondLine = format("%s, %s",address.getCity(),address.getState());
         String thirdLine = format("%s",address.getCountry());
         return generateBorder(firstLine, secondLine, thirdLine);
     }
 
-    private String generateBorder(String firstLine, String secondLine, String thirdLine) {
+    protected String generateBorder(String firstLine, String secondLine, String thirdLine) {
         int maxLength = findMaxLength(firstLine, secondLine, thirdLine);
         String upDown = generateUpDown(maxLength);
         String topLine = wrap(firstLine, maxLength);

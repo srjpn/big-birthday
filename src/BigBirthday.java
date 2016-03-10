@@ -1,11 +1,12 @@
 import guest.Guest;
-import guest.MailTemplate;
 import guest.filters.AgeFilter;
 import guest.filters.CountryFilter;
 import guest.specifics.Address;
 import guest.specifics.Age;
 import guest.specifics.Gender;
 import guest.specifics.Name;
+import guest.template.GuestTemplate;
+import guest.template.LastNameFirstBorderedTemplate;
 import org.apache.commons.cli.ParseException;
 
 import java.util.HashMap;
@@ -13,14 +14,12 @@ import java.util.Set;
 
 public class BigBirthday {
     private static final String FILE = "data/records";
-    private static final String MAILTEMPLATE = "data/template";
 
     public static void main(String[] args) {
         Cli arguments = new Cli(args);
         BigBirthday birthday = new BigBirthday();
         try{
             String data =  ReadFile.addFile(FILE).getContent();
-            String template =  ReadFile.addFile(MAILTEMPLATE).getContent();
 
             if (arguments.hasOption("h")){
                 arguments.help();
@@ -29,11 +28,11 @@ public class BigBirthday {
 
             People people = birthday.createPersonFromCSV(data);
 
-            MailTemplate mailTemplate = MailTemplate.createTemplate(template);
+            GuestTemplate template = new LastNameFirstBorderedTemplate("+","-","|");
 
             People filteredPeople = birthday.applyFilters(new Cli(args).getOptions(),people).filter();
 
-            birthday.print(mailTemplate, filteredPeople);
+            birthday.print(template, filteredPeople);
         }
         catch (Exception e){
             System.out.println(e.getMessage());
@@ -66,9 +65,9 @@ public class BigBirthday {
         return new Guest(name, gender, age, address);
     }
 
-    public void print(MailTemplate template, People people){
+    public void print(GuestTemplate template, People people){
         for (Guest guest : people) {
-            System.out.println(template.generate(guest));
+            System.out.println(guest.getNameCard(template));
         }
     }
 

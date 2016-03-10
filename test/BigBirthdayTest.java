@@ -1,5 +1,5 @@
 import guest.Guest;
-import guest.MailTemplate;
+import guest.template.MailTemplate;
 import guest.specifics.Address;
 import guest.specifics.Age;
 import guest.specifics.Gender;

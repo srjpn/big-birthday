@@ -4,6 +4,7 @@ import guest.specifics.Address;
 import guest.specifics.Age;
 import guest.specifics.Gender;
 import guest.specifics.Name;
+import guest.template.MailTemplate;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -23,11 +24,9 @@ public class MailTemplateTest {
         Address address = new Address("Thrissur", "Kerala", "India");
         Age age = new Age(20);
 
-        Guest guest = new Guest(name, gender, age, address);
-
         MailTemplate mailTemplate = MailTemplate.createTemplate("tiTle. firSt_name last_name\ncity, State\ncouNtry");
 
-        assertEquals("Mr. Sooraj Parameswaran\nThrissur, Kerala\nIndia",mailTemplate.generate(guest));
+        assertEquals("Mr. Sooraj Parameswaran\nThrissur, Kerala\nIndia",mailTemplate.generate(name,gender,address));
     }
 
 }

@@ -1,7 +1,7 @@
 package bigBirthday.guest.specifics;
 
 public class Age {
-    int age;
+    private final int age;
 
     public Age(int age) {
         this.age = age;

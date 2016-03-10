@@ -7,7 +7,7 @@ import bigBirthday.guest.specifics.Name;
 public class MailTemplate implements GuestTemplate {
     private final String template;
 
-    public MailTemplate(String template) {
+    private MailTemplate(String template) {
         this.template = template;
     }
 

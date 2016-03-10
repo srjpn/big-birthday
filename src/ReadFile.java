@@ -48,9 +48,4 @@ public class ReadFile {
     public String getContent(){
         return this.content;
     }
-
-    public String getFileName(){
-        return this.fileName;
-    }
-
 }

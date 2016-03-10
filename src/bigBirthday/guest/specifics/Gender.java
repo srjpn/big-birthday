@@ -7,7 +7,7 @@ public class Gender {
         this.gender = gender;
     }
 
-    public static Gender defineGenderAs(String gender) throws Exception, Error {
+    public static Gender defineGenderAs(String gender) throws Error {
         String genderInUpperCase = gender.toUpperCase();
         if(genderInUpperCase.equals("FEMALE") || genderInUpperCase.equals("MALE") )
             return new Gender(genderInUpperCase);

@@ -7,13 +7,13 @@ import bigBirthday.guest.specifics.Gender;
 import bigBirthday.guest.specifics.Name;
 
 public class GuestParser {
-    private String data;
+    private final String data;
 
     public GuestParser(String data) {
         this.data = data;
     }
 
-    public People createPersonFromCSV() throws Exception, Error {
+    public People createPersonFromCSV() throws Error {
         String[] csvData = data.split("\n");
         People guests = new People();
 
@@ -24,7 +24,7 @@ public class GuestParser {
         return guests;
     }
 
-    private Guest createGuest(String personData) throws Exception, Error {
+    private Guest createGuest(String personData) throws Error {
         String[] personDetails = personData.split(",");
         Name name = new Name(personDetails[0],personDetails[1]);
         Gender gender = Gender.defineGenderAs(personDetails[2]);

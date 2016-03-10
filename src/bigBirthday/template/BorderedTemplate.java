@@ -8,9 +8,9 @@ import static java.lang.String.format;
 
 public class BorderedTemplate implements GuestTemplate {
 
-    String corner;
-    String side;
-    String upDown;
+    private final String corner;
+    private final String side;
+    private final String upDown;
 
     public BorderedTemplate(String corner, String upDown, String side) {
         this.corner = corner;
@@ -26,7 +26,7 @@ public class BorderedTemplate implements GuestTemplate {
         return generateBorder(firstLine, secondLine, thirdLine);
     }
 
-    protected String generateBorder(String firstLine, String secondLine, String thirdLine) {
+    String generateBorder(String firstLine, String secondLine, String thirdLine) {
         int maxLength = findMaxLength(firstLine, secondLine, thirdLine);
         String upDown = generateUpDown(maxLength);
         String topLine = wrap(firstLine, maxLength);

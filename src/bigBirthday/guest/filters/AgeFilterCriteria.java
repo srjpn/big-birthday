@@ -3,7 +3,7 @@ package bigBirthday.guest.filters;
 import bigBirthday.guest.Guest;
 
 public class AgeFilterCriteria implements FilterCriteria {
-    int age;
+    private final int age;
 
     public AgeFilterCriteria(int age) {
         this.age = age;

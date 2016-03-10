@@ -5,7 +5,7 @@ import bigBirthday.guest.Guest;
 import bigBirthday.template.GuestTemplate;
 
 public class LabelPrinter implements GuestPrinter {
-    GuestTemplate template;
+    private final GuestTemplate template;
 
     public LabelPrinter(GuestTemplate template) {
         this.template = template;

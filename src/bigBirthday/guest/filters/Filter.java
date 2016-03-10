@@ -6,7 +6,7 @@ import bigBirthday.guest.Guest;
 import java.util.HashSet;
 
 public class Filter {
-    private HashSet<FilterCriteria> filterCriteria;
+    private final HashSet<FilterCriteria> filterCriteria;
 
     public Filter() {
         this.filterCriteria = new HashSet<>();

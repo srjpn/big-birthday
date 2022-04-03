@@ -16,10 +16,10 @@ public class BigBirthday {
 
     public static void main(String[] args) {
         Cli arguments = new Cli(args);
-        try{
-            String data =  ReadFile.addFile(FILE).getContent();
+        try {
+            String data = ReadFile.addFile(FILE).getContent();
 
-            if (arguments.hasOption("h")){
+            if (arguments.hasOption("h")) {
                 arguments.help();
                 return;
             }
@@ -35,13 +35,11 @@ public class BigBirthday {
             People filteredPeople = filter.filter(people);
 
             new LabelPrinter(template).print(filteredPeople);
-        }
-        catch (Exception e){
+        } catch (Exception e) {
             System.out.println(e.getMessage());
             arguments.help();
             System.exit(1);
-        }
-        catch (Error e){
+        } catch (Error e) {
             System.out.println(e.getMessage());
             System.exit(1);
         }
